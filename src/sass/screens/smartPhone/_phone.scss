@@ -1,0 +1,22 @@
+@use "./login" as login;
+@use "../../sassDry/_mixins" as mix;
+
+@mixin phoneStyles() {
+  .phoneLogin {
+    width: 100%;
+    height: 100%;
+    @include login.styles;
+    @include mix.background-image(".././assets/images/appBckgImg.jpg");
+    form {
+      width: 85%;
+      background-color: white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      @include mix.flex-container(column, space-between, center);
+      figure {
+        width: 80%;
+        border: 1px solid red;
+        @include mix.flex-container(column, space-between, center);
+      }
+    }
+  }
+}

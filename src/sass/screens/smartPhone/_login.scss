@@ -1,0 +1,6 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  @include mix.flex-container(row, center, center);
+}

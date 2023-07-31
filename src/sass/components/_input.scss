@@ -1,0 +1,20 @@
+@use "../sassDry/_variables" as var;
+
+@mixin input($fs, $ff, $bg, $cl, $pd, $mg) {
+  font-size: $fs;
+  font-family: $ff;
+  background-color: $bg;
+  color: $cl;
+  padding: $pd;
+  margin: $mg;
+  &::placeholder {
+    color: $cl;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.shtoShpenz-input {
+  @include input(16px, var.$fontActor, var.$col1, var.$col4, 0.5em 1em, 0);
+}

@@ -33,7 +33,7 @@ const KufijteBuxhetorCart: React.FC = () => {
   return (
     <div
       className="krGrphUp-card3"
-      aria-lacel="Budget Limits progress bar's cart"
+      aria-label="Budget Limits progress bar's cart"
     >
       <h1>Kufijtë buxhetor</h1>
       <div aria-label="Group for progress bar's and some option's">

@@ -4,7 +4,7 @@ const SmartPhone = () => {
       <form>
         <figure className="logo&text">
           <img src="" alt="Logo" loading="lazy" />
-          <h1>Page title</h1>
+          <h1>Gjeniu Buxhetor</h1>
         </figure>
         <div className="phLogin-btnContainer" role="group">
           <button>Vazhdo me Facebook</button>

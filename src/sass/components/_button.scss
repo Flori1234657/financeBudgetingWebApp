@@ -1,0 +1,64 @@
+@use "../sassDry/_variables" as var;
+
+// Button styles
+@mixin button(
+  $bg-color,
+  $text-color,
+  $border-radius: 4px,
+  $font-family: var.$fontLato,
+  $padding: 10px 20px,
+  $font-size: 16px
+) {
+  display: inline-block;
+  padding: $padding;
+  font-size: $font-size;
+  font-family: $font-family;
+  border: none;
+  border-radius: $border-radius;
+  background-color: $bg-color;
+  color: $text-color;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: lighten($bg-color, 10%);
+  }
+}
+
+// Primary button styles
+.button-primary {
+  @include button(var.$col3, var.$col1, 10px);
+}
+
+// Secondary button styles
+.button-secondary {
+  @include button(var.$col1, var.$col4, 10px);
+}
+
+// Success button styles
+// .button-success {
+//   @include button(#2ecc71, #fff);
+// }
+
+// Warning button styles
+// .button-warning {
+//   @include button(#f39c12, #fff);
+// }
+
+// Danger button styles
+.button-danger {
+  @include button(var.$col3, var.$col1, 10px);
+}
+
+//Other btn styles
+.button-ringarko {
+  @include button(#f4b400, white);
+}
+.button-tutorial {
+  @include button(#db4437, white);
+}
+.button-conWiGoog {
+  @include button(#0f9d58, white);
+}
+.button-conWiFacb {
+  @include button(#39569c, white);
+}
