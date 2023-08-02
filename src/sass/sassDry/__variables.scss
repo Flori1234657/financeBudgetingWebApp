@@ -22,6 +22,17 @@ $colInfo2: #6680cc;
 $colInfo3: #172d87;
 $colInfo4: #000b2e;
 
+$colFb: #39569c;
+$colGogl1: #0f9d58;
+$colGogl2: #f4b400;
+$colGogl3: #db4437;
+
 $fontLato: "Lato, sans-serif";
 $fontActor: "Actor", sans-serif;
 $fontMerr: "Merriweather Sans", sans-serif;
+
+// 320-600
+$smax600_11-16: clamp(0.69rem, calc(0.33rem + 1.79vw), 1rem);
+$smax600_16-23: clamp(1rem, calc(0.5rem + 2.5vw), 1.44rem);
+$smax600_19-28: clamp(1.19rem, calc(0.54rem + 3.21vw), 1.75rem);
+$smax600_23-33: clamp(1.44rem, calc(0.72rem + 3.57vw), 2.06rem);

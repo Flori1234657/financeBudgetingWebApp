@@ -2,5 +2,95 @@
 @use "../../sassDry/_variables" as var;
 
 @mixin styles {
-  @include mix.flex-container(row, center, center);
+  .phoneLogin {
+    @include mix.flex-container(row, center, center);
+    width: 100%;
+    height: 100%;
+    @include mix.background-image(".././assets/images/appBckgImg.jpg");
+    form {
+      width: 80%;
+      max-width: 400px;
+      background-color: white;
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      font-size: var.$smax600_19-28;
+      border-radius: 0.5em;
+      @include mix.flex-container(column, space-between, center);
+      figure {
+        width: 80%;
+        @include mix.flex-container(column, space-between, center);
+        img {
+          width: 40%;
+          font-size: var.$smax600_19-28;
+          padding: 2em 0 1em 0;
+        }
+        h1 {
+          @include mix.font(
+            var.$fontLato,
+            var.$smax600_23-33,
+            700,
+            var.$col4,
+            0 0 1.5em 0,
+            0
+          );
+        }
+      }
+      .phLogin-btnContainer {
+        width: 80%;
+        @include mix.flex-container(column, center, center);
+        button {
+          width: 100%;
+          @include mix.font(
+            var.$fontActor,
+            var.$smax600_16-23,
+            normal,
+            white,
+            0.5em,
+            0
+          );
+          border-radius: 0.6em;
+          background-color: red;
+          text-align: start;
+          span {
+            padding: 0;
+            padding-right: 0.5em;
+          }
+          margin-bottom: 0.5em;
+        }
+        button:first-child {
+          background-color: var.$colFb;
+        }
+        button:nth-child(2) {
+          background-color: var.$colGogl1;
+        }
+        .phLogin-secondBtnCont {
+          width: 100%;
+          @include mix.flex-container(row, space-between, center);
+          button {
+            width: 45%;
+            text-align: center;
+            margin-bottom: 2em;
+          }
+          button:first-child {
+            background-color: var.$colGogl2;
+          }
+          button:nth-child(2) {
+            background-color: var.$colGogl3;
+          }
+        }
+      }
+      h3 {
+        @include mix.font(
+          var.$fontMerr,
+          var.$smax600_11-16,
+          normal,
+          var.$col4,
+          0 0 3em 0,
+          0
+        );
+        width: 80%;
+      }
+    }
+  }
 }
