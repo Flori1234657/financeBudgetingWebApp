@@ -1,0 +1,6 @@
+@use "./login" as login;
+@use "../../sassDry/_mixins" as mix;
+
+@mixin tabStyles() {
+  @include login.styles;
+}

@@ -18,11 +18,12 @@ const SmartPhone = () => {
             Vazhdo me Facebook
           </button>
           <button>
-            {" "}
             <span>
               <GoogleLogo />
             </span>{" "}
-            Vazhdo me Google Acc.
+            {window.innerWidth < 601
+              ? "Vazhdo me Google Acc."
+              : "Vazhdo me Google Account"}
           </button>
           <div className="phLogin-secondBtnCont" role="group">
             <button>Ringarko</button>

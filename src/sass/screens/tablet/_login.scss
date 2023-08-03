@@ -1,0 +1,26 @@
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .phoneLogin {
+    form {
+      max-width: 650px;
+      font-size: var.$smax899_28-40;
+      figure {
+        img {
+          font-size: var.$smax899_33-48;
+        }
+        h1 {
+          font-size: var.$smax899_33-48;
+        }
+      }
+      .phLogin-btnContainer {
+        button {
+          font-size: var.$smax899_23-33;
+        }
+      }
+      h3 {
+        font-size: var.$smax899_16-23;
+      }
+    }
+  }
+}
