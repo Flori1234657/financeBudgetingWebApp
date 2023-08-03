@@ -1,0 +1,27 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .desktLogin {
+    form {
+      .topMinDesc {
+        h3 {
+          font-size: var.$smax1799_16-23;
+        }
+      }
+      .logoDHtext {
+        h1 {
+          font-size: var.$smax1799_28-40;
+        }
+      }
+      .dskLogin-btnContainer {
+        button {
+          font-size: var.$smax1799_19-28;
+        }
+      }
+      h3 {
+        font-size: var.$smax1799_16-23;
+      }
+    }
+  }
+}

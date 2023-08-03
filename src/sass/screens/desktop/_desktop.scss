@@ -1,0 +1,6 @@
+@use "./login" as login;
+@use "../../sassDry/_mixins" as mix;
+
+@mixin desktopSMStyles() {
+  @include login.styles;
+}
