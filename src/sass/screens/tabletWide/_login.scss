@@ -12,7 +12,7 @@
       background-color: white;
       @include mix.flex-container(column, space-around, center);
       .topMinDesc {
-        width: 65%;
+        width: 60%;
         @include mix.flex-container(row, flex-start, center);
         img {
           width: 8%;
@@ -21,7 +21,7 @@
         h3 {
           @include mix.font(
             var.$fontMerr,
-            var.$smax1199_13-16,
+            var.$smax1199_11-13,
             normal,
             var.$col4,
             0 0 0 0.5em,
@@ -30,7 +30,7 @@
         }
       }
       .logoDHtext {
-        width: 65%;
+        width: 60%;
         @include mix.flex-container(column, center, center);
         img {
           width: 40%;
@@ -39,7 +39,7 @@
         h1 {
           @include mix.font(
             var.$fontLato,
-            var.$smax1199_23-28,
+            var.$smax1199_19-23,
             medium,
             var.$col4,
             0,
@@ -48,13 +48,14 @@
         }
       }
       .dskLogin-btnContainer {
-        width: 65%;
+        width: 60%;
         @include mix.flex-container(column, center, center);
         button {
+          cursor: pointer;
           width: 100%;
           @include mix.font(
             var.$fontActor,
-            var.$smax1199_16-19,
+            var.$smax1199_13-16,
             normal,
             white,
             0.5em,
@@ -67,6 +68,9 @@
             padding-right: 0.5em;
           }
           margin-bottom: 0.5em;
+          &:hover {
+            filter: brightness(110%);
+          }
         }
         button:first-child {
           background-color: var.$colFb;
@@ -91,10 +95,10 @@
         }
       }
       h3 {
-        width: 65%;
+        width: 60%;
         @include mix.font(
           var.$fontMerr,
-          var.$smax1199_13-16,
+          var.$smax1199_11-13,
           normal,
           var.$col4,
           0,

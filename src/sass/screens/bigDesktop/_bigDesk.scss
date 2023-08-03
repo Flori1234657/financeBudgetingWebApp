@@ -1,0 +1,6 @@
+@use "./login" as login;
+@use "../../sassDry/_mixins" as mix;
+
+@mixin desktopBIGStyles() {
+  @include login.styles;
+}

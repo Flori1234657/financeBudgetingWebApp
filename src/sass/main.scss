@@ -5,6 +5,7 @@
 @use "./screens/tablet/tablet" as tablet;
 @use "./screens/tabletWide/tabWide" as tabWide;
 @use "./screens/desktop/desktop" as desktopSM;
+@use "./screens/bigDesktop/bigDesk" as desktopBIG;
 
 *,
 ::after,
@@ -42,4 +43,7 @@ html {
 }
 @include mix.media-query(1200px) {
   @include desktopSM.desktopSMStyles;
+}
+@include mix.media-query(1800px) {
+  @include desktopBIG.desktopBIGStyles;
 }
