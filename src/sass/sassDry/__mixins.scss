@@ -41,6 +41,12 @@
     @content;
   }
 }
+@mixin media-query-lands($breakpoint) {
+  @media only screen and (min-width: $breakpoint) and (orientation: landscape) {
+    @content;
+  }
+}
+
 @mixin font(
   $font-family,
   $font-size,

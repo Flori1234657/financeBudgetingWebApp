@@ -3,6 +3,7 @@
 @use "./sassDry/_utils" as func;
 @use "./screens/smartPhone/phone" as smartPhone;
 @use "./screens/tablet/tablet" as tablet;
+@use "./screens/tabletWide/tabWide" as tabWide;
 
 *,
 ::after,
@@ -34,4 +35,7 @@ html {
 @include smartPhone.phoneStyles;
 @include mix.media-query(601px) {
   @include tablet.tabStyles;
+}
+@include mix.media-query-lands(900px) {
+  @include tabWide.tabWStyles;
 }

@@ -42,3 +42,8 @@ $smax899_16-23: clamp(1rem, calc(0.12rem + 2.35vw), 1.44rem);
 $smax899_23-33: clamp(1.44rem, calc(0.18rem + 3.36vw), 2.06rem);
 $smax899_28-40: clamp(1.75rem, calc(0.24rem + 4.03vw), 2.5rem);
 $smax899_33-48: clamp(2.06rem, calc(0.17rem + 5.03vw), 3rem);
+
+//900-1199
+$smax1199_13-16: clamp(0.81rem, calc(0.25rem + 1vw), 1rem);
+$smax1199_16-19: clamp(1rem, calc(0.44rem + 1vw), 1.19rem);
+$smax1199_23-28: clamp(1.44rem, calc(0.5rem + 1.67vw), 1.75rem);
