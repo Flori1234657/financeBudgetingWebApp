@@ -17,16 +17,6 @@ const Analiza = lazy(() => import("./pages/analiza/Analiza"));
 const RrethNesh = lazy(() => import("./pages/rrethNesh/RrethNesh"));
 const FooterNav = lazy(() => import("./nav/FooterNav"));
 
-//Rreth nesh pages
-const Rreth = lazy(() => import("./pages/rrethNesh/pages/Rreth"));
-const Dokumentacioni = lazy(
-  () => import("./pages/rrethNesh/pages/Dokumentacioni")
-);
-const Faqs = lazy(() => import("./pages/rrethNesh/pages/Faqs"));
-const PrivacyPolicy = lazy(
-  () => import("./pages/rrethNesh/pages/PrivacyPolicy")
-);
-
 function App() {
   const winWdth: number = window.innerWidth;
   const [showNav, setShowNav] = useState<boolean>(false);

@@ -1,0 +1,31 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+@use "../../components/phoneNav" as phnNv;
+
+@mixin styles {
+  header {
+    width: 100%;
+    border-bottom: 1px solid var.$col2;
+    @include mix.flex-container(row, center, center);
+    font-size: 16px;
+    padding: 0.5em 0;
+    div {
+      width: 90%;
+      @include mix.flex-container(row, space-between, center);
+      > img {
+        width: 9%;
+      }
+      figure {
+        width: 58%;
+        @include mix.flex-container(row, space-between, center);
+        img {
+          width: 22%;
+        }
+        figcaption {
+          @include mix.font(var.$fontLato, 16px, 600, var.$col4, 0, 0);
+        }
+      }
+    }
+  }
+  @include phnNv.styles;
+}

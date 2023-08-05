@@ -1,0 +1,36 @@
+@use "../sassDry/_mixins" as mix;
+@use "../sassDry/_variables" as var;
+
+@mixin styles {
+  nav {
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    width: 100%;
+    background-color: var.$col3;
+    @include mix.flex-container(row, center, center);
+    font-size: 19px;
+    border-top-left-radius: 0.53em;
+    border-top-right-radius: 0.53em;
+    ul {
+      width: 90%;
+      @include mix.flex-container(row, space-between, center);
+      li {
+        width: 15%;
+        font-size: 16px;
+        padding: 0.5em 0;
+        text-align: center;
+        img {
+          width: 55%;
+        }
+      }
+      .active {
+        font-size: 19px;
+        transform: translateY(-1.2em);
+        background: var.$col3;
+        border-radius: 50%;
+        position: relative;
+      }
+    }
+  }
+}
