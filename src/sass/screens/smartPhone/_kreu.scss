@@ -85,6 +85,8 @@
             width: 92.5%;
             align-self: center;
             @include mix.flex-container(row, space-between, center);
+            font-size: 19px;
+            padding: 1em 0;
           }
         }
         .krGrphUp-card3 {
@@ -230,6 +232,13 @@
             }
           }
         }
+      }
+      .grafikuMadh {
+        width: 100%;
+        background-color: var.$col2;
+        font-size: 19px;
+        border-radius: 0.5em;
+        margin-top: 0.5em;
       }
     }
     .bottomTitle {

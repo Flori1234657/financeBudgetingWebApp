@@ -6,6 +6,7 @@ import QëllimetFinanciareProgress from "../../components/pages/kreu/QëllimetFi
 import WebLogo from "../../assets/images/logo.png";
 import ProfilImg from "../../assets/images/profilImg.png";
 import { useLocation } from "react-router-dom";
+import LineChart from "../../components/pages/kreu/charts/LineChart";
 
 const Kreu: React.FC<{
   setShowNav: React.Dispatch<React.SetStateAction<boolean>>;
@@ -40,7 +41,9 @@ const Kreu: React.FC<{
             <KufijteBuxhetorCart />
           </div>
           <div className="kreuGrphDown" aria-label="Group for 2 graphics">
-            <div className="grafikuMadh"></div>
+            <div className="grafikuMadh">
+              <LineChart />
+            </div>
             <QëllimetFinanciareProgress />
           </div>
         </section>

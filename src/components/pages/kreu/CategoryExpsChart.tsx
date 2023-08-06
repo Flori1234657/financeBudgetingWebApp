@@ -1,4 +1,5 @@
 import React from "react";
+import PieChart from "./charts/PieChart";
 
 const CategoryExpsChart: React.FC = () => {
   return (
@@ -8,13 +9,7 @@ const CategoryExpsChart: React.FC = () => {
     >
       <h2>Shpenzuar më shumë kategori</h2>
       <div aria-label="Pie chart group">
-        <div>{/* Pie CHART */}</div>
-        <ul>
-          <li>Kategoria1</li>
-          <li>Kategoria2</li>
-          <li>Kategoria3</li>
-          <li>Kategoria4</li>
-        </ul>
+        <PieChart />
       </div>
     </div>
   );
