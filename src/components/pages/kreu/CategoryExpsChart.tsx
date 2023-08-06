@@ -6,7 +6,7 @@ const CategoryExpsChart: React.FC = () => {
       className="krGrphUp-card2"
       aria-label="Expense category pie chart cart"
     >
-      <h1>Shpenzuar më shumë kategori</h1>
+      <h2>Shpenzuar më shumë kategori</h2>
       <div aria-label="Pie chart group">
         <div>{/* Pie CHART */}</div>
         <ul>

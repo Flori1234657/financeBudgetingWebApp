@@ -28,4 +28,213 @@
     }
   }
   @include phnNv.styles;
+  .kreuMain {
+    width: 90%;
+    @include mix.flex-container(column);
+    h1 {
+      @include mix.font(var.$fontMerr, 23px, 600, var.$col4, 1em 0, 0);
+    }
+    .kreuGraphCont {
+      width: 100%;
+      @include mix.flex-container(column);
+      .kreuGrphUp {
+        @include mix.flex-container(column);
+        .krGrphUp-card1 {
+          @include mix.phoneCardsKreu();
+          h2:first-child {
+            @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+          }
+          h2:nth-child(2) {
+            @include mix.font(var.$fontLato, 23px, 500, var.$col1, 0 0.4em, 0);
+            span {
+              font-size: 16px;
+            }
+          }
+          div {
+            width: 93%;
+            align-self: center;
+            @include mix.flex-container(row, space-between, center);
+            h3 {
+              @include mix.font(
+                var.$fontActor,
+                13px,
+                500,
+                var.$col4,
+                2em 0 1em 0,
+                0
+              );
+            }
+            h4 {
+              @include mix.font(
+                var.$fontMerr,
+                11px,
+                500,
+                var.$col4,
+                1.3em 0 0 0,
+                0
+              );
+            }
+          }
+        }
+        .krGrphUp-card2 {
+          @include mix.phoneCardsKreu();
+          h2 {
+            @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+          }
+          > div {
+            width: 92.5%;
+            align-self: center;
+            @include mix.flex-container(row, space-between, center);
+          }
+        }
+        .krGrphUp-card3 {
+          @include mix.phoneCardsKreu(100%);
+          h2 {
+            @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+          }
+          > div {
+            width: 92.5%;
+            align-self: center;
+            @include mix.flex-container(column);
+            .progressBarGroup {
+              width: 100%;
+              @include mix.flex-container(row, space-between, center);
+              h3 {
+                @include mix.font(
+                  var.$fontActor,
+                  16px,
+                  500,
+                  var.$col4,
+                  0 0 0 0.5em,
+                  0
+                );
+              }
+              div {
+                width: 70%;
+                @include mix.flex-container(column);
+                meter {
+                  width: 100%;
+                }
+                meter::-webkit-meter-bar {
+                  background-color: var.$col3;
+                }
+                meter::-webkit-meter-optimum-value {
+                  background-color: var.$col1;
+                }
+                /* Style the meter fill */
+                //  meter::-webkit-meter-optimum-value,
+                //  meter::-webkit-meter-suboptimum-value,
+                //  meter::-webkit-meter-even-less-good-value {
+                //   background-color: green;
+                // }
+
+                /* Style the meter fill with different colors at specific values */
+                //  meter[value="0"]::-webkit-meter-optimum-value,
+                //  meter[value="1"]::-webkit-meter-optimum-value {
+                //   background-color: red;
+                // }
+                h4 {
+                  @include mix.font(var.$fontActor, 11px, 500, var.$col4, 0, 0);
+                  span {
+                    margin-left: 10em;
+                  }
+                }
+              }
+            }
+          }
+          .sortOptionsGroup {
+            width: 92.5%;
+            align-self: center;
+            @include mix.flex-container(column);
+            h3 {
+              @include mix.font(
+                var.$fontMerr,
+                16px,
+                500,
+                var.$col4,
+                1em 0 0.5em 0,
+                0
+              );
+            }
+            select {
+              width: 40%;
+              background-color: var.$col1;
+              @include mix.font(
+                var.$fontLato,
+                16px,
+                500,
+                var.$col3,
+                0.3em 0.5em,
+                0
+              );
+              border-radius: 0.6em;
+            }
+            button {
+              @include mix.font(
+                var.$fontLato,
+                16px,
+                500,
+                var.$col1,
+                0.5em 1em,
+                1em 0
+              );
+              background-color: var.$col3;
+              border-radius: 0.6em;
+            }
+          }
+        }
+      }
+    }
+    .kreuGrphDown {
+      width: 100%;
+      @include mix.flex-container(column);
+      div:last-child {
+        @include mix.phoneCardsKreu(100%);
+        h2 {
+          @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+        }
+        div {
+          width: 92.5%;
+          align-self: center;
+          margin-top: 0;
+          font-size: 16px;
+          margin-bottom: 0.4em;
+          @include mix.flex-container(row, space-between, center);
+          h3 {
+            @include mix.font(
+              var.$fontActor,
+              16px,
+              500,
+              var.$col4,
+              0 0 0 0.5em,
+              0
+            );
+          }
+          div {
+            width: 70%;
+            @include mix.flex-container(column);
+            meter {
+              width: 100%;
+            }
+            meter::-webkit-meter-bar {
+              background-color: var.$col3;
+            }
+            meter::-webkit-meter-optimum-value {
+              background-color: var.$col1;
+            }
+            h4 {
+              @include mix.font(var.$fontActor, 11px, 500, var.$col4, 0, 0);
+              span {
+                margin-left: 10em;
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottomTitle {
+      @include mix.font(var.$fontLato, 23px, 700, var.$col4, 1em 0 3em 0, 0);
+      text-align: center;
+    }
+  }
 }

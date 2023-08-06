@@ -11,10 +11,8 @@ export interface Props {
 
 const ProgessBarsWithText: React.FC<Props> = (propObj) => {
   return (
-    <div aria-label="Progress bar's group">
-      <div aria-label="textGroup">
-        <h3 key={`h3ID${propObj.id}`}>{propObj.kategQell}</h3>
-      </div>
+    <div aria-label="Progress bar's group" className="progressBarGroup">
+      <h3 key={`h3ID${propObj.id}`}>{propObj.kategQell}</h3>
 
       <div
         aria-label="Group for progress bar's and text info"

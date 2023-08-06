@@ -20,6 +20,12 @@ ol,
 ul {
   list-style: none;
 }
+select:focus,
+input:focus,
+button:focus {
+  outline: none;
+  border: none;
+}
 
 html {
   width: 100%;

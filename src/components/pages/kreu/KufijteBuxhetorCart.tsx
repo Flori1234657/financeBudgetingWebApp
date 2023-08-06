@@ -35,12 +35,12 @@ const KufijteBuxhetorCart: React.FC = () => {
       className="krGrphUp-card3"
       aria-label="Budget Limits progress bar's cart"
     >
-      <h1>Kufijtë buxhetor</h1>
+      <h2>Kufijtë buxhetor</h2>
       <div aria-label="Group for progress bar's and some option's">
         {provObj.map((el) => (
           <ProgessBarsWithText key={`progressbarswthtxt${el.id}`} {...el} />
         ))}
-        <div aria-label="Options group">
+        <div className="sortOptionsGroup" aria-label="Options group">
           <h3>Renditja</h3>
           <select>
             <option value="alfabeti">Alfabeti</option>

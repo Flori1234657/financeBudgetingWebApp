@@ -32,7 +32,7 @@ const Kreu: React.FC<{
         ""
       )}
       <main className="kreuMain">
-        <h2>Përshëndetje User</h2>
+        <h1>Përshëndetje User</h1>
         <section aria-label="Graphic's Container" className="kreuGraphCont">
           <div className="kreuGrphUp" aria-label="Group for 3 graphics">
             <KuletaIMeCart />
@@ -44,7 +44,7 @@ const Kreu: React.FC<{
             <QëllimetFinanciareProgress />
           </div>
         </section>
-        <h1>Finance and Budgeting WebApp</h1>
+        <h1 className="bottomTitle">WebApp për menaxhimin e financave</h1>
       </main>
     </>
   );

@@ -1,3 +1,5 @@
+@use "./_variables" as var;
+
 @mixin placeholder-color($color) {
   &::-webkit-input-placeholder {
     color: $color;
@@ -74,4 +76,13 @@
   background-size: $size;
   background-repeat: $repeat;
   background-attachment: $attachment;
+}
+
+@mixin phoneCardsKreu($wdth: 90%) {
+  width: $wdth;
+  @include flex-container(column);
+  background-color: var.$col2;
+  font-size: 19px;
+  margin-top: 0.5em;
+  border-radius: 0.5em;
 }
