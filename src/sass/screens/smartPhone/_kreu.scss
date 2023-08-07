@@ -7,7 +7,7 @@
     width: 100%;
     border-bottom: 1px solid var.$col2;
     @include mix.flex-container(row, center, center);
-    font-size: 16px;
+    font-size: var.$smax600_16-23;
     padding: 0.5em 0;
     div {
       width: 90%;
@@ -17,12 +17,19 @@
       }
       figure {
         width: 58%;
-        @include mix.flex-container(row, space-between, center);
+        @include mix.flex-container(row, flex-start, center);
         img {
           width: 22%;
         }
         figcaption {
-          @include mix.font(var.$fontLato, 16px, 600, var.$col4, 0, 0);
+          @include mix.font(
+            var.$fontLato,
+            var.$smax600_16-28,
+            600,
+            var.$col4,
+            0,
+            0 0 0 0.3em
+          );
         }
       }
     }
@@ -32,7 +39,14 @@
     width: 90%;
     @include mix.flex-container(column);
     h1 {
-      @include mix.font(var.$fontMerr, 23px, 600, var.$col4, 1em 0, 0);
+      @include mix.font(
+        var.$fontMerr,
+        var.$smax600_23-33,
+        600,
+        var.$col4,
+        1em 0,
+        0
+      );
     }
     .kreuGraphCont {
       width: 100%;
@@ -42,12 +56,26 @@
         .krGrphUp-card1 {
           @include mix.phoneCardsKreu();
           h2:first-child {
-            @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
           }
           h2:nth-child(2) {
-            @include mix.font(var.$fontLato, 23px, 500, var.$col1, 0 0.4em, 0);
+            @include mix.font(
+              var.$fontLato,
+              var.$smax600_23-33,
+              500,
+              var.$col1,
+              0 0.4em,
+              0
+            );
             span {
-              font-size: 16px;
+              font-size: var.$smax600_16-23;
             }
           }
           div {
@@ -57,7 +85,7 @@
             h3 {
               @include mix.font(
                 var.$fontActor,
-                13px,
+                var.$smax600_13-19,
                 500,
                 var.$col4,
                 2em 0 1em 0,
@@ -67,7 +95,7 @@
             h4 {
               @include mix.font(
                 var.$fontMerr,
-                11px,
+                var.$smax600_11-16,
                 500,
                 var.$col4,
                 1.3em 0 0 0,
@@ -79,20 +107,34 @@
         .krGrphUp-card2 {
           @include mix.phoneCardsKreu();
           h2 {
-            @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
           }
           > div {
             width: 92.5%;
             align-self: center;
             @include mix.flex-container(row, space-between, center);
-            font-size: 19px;
+            font-size: var.$smax600_19-28;
             padding: 1em 0;
           }
         }
         .krGrphUp-card3 {
           @include mix.phoneCardsKreu(100%);
           h2 {
-            @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
           }
           > div {
             width: 92.5%;
@@ -104,7 +146,7 @@
               h3 {
                 @include mix.font(
                   var.$fontActor,
-                  16px,
+                  var.$smax600_16-23,
                   500,
                   var.$col4,
                   0 0 0 0.5em,
@@ -136,7 +178,14 @@
                 //   background-color: red;
                 // }
                 h4 {
-                  @include mix.font(var.$fontActor, 11px, 500, var.$col4, 0, 0);
+                  @include mix.font(
+                    var.$fontActor,
+                    var.$smax600_11-16,
+                    500,
+                    var.$col4,
+                    0,
+                    0
+                  );
                   span {
                     margin-left: 10em;
                   }
@@ -151,7 +200,7 @@
             h3 {
               @include mix.font(
                 var.$fontMerr,
-                16px,
+                var.$smax600_16-23,
                 500,
                 var.$col4,
                 1em 0 0.5em 0,
@@ -163,7 +212,7 @@
               background-color: var.$col1;
               @include mix.font(
                 var.$fontLato,
-                16px,
+                var.$smax600_16-23,
                 500,
                 var.$col3,
                 0.3em 0.5em,
@@ -174,7 +223,7 @@
             button {
               @include mix.font(
                 var.$fontLato,
-                16px,
+                var.$smax600_16-23,
                 500,
                 var.$col1,
                 0.5em 1em,
@@ -192,20 +241,28 @@
       @include mix.flex-container(column);
       div:last-child {
         @include mix.phoneCardsKreu(100%);
+        max-width: 425px;
         h2 {
-          @include mix.font(var.$fontMerr, 19px, 500, var.$col4, 0.5em, 0);
+          @include mix.font(
+            var.$fontMerr,
+            var.$smax600_19-28,
+            500,
+            var.$col4,
+            0.5em,
+            0
+          );
         }
         div {
           width: 92.5%;
           align-self: center;
           margin-top: 0;
-          font-size: 16px;
+          font-size: var.$smax600_16-23;
           margin-bottom: 0.4em;
           @include mix.flex-container(row, space-between, center);
           h3 {
             @include mix.font(
               var.$fontActor,
-              16px,
+              var.$smax600_16-23,
               500,
               var.$col4,
               0 0 0 0.5em,
@@ -225,7 +282,14 @@
               background-color: var.$col1;
             }
             h4 {
-              @include mix.font(var.$fontActor, 11px, 500, var.$col4, 0, 0);
+              @include mix.font(
+                var.$fontActor,
+                var.$smax600_11-16,
+                500,
+                var.$col4,
+                0,
+                0
+              );
               span {
                 margin-left: 10em;
               }
@@ -234,15 +298,23 @@
         }
       }
       .grafikuMadh {
+        order: 2;
         width: 100%;
         background-color: var.$col2;
-        font-size: 19px;
+        font-size: var.$smax600_19-28;
         border-radius: 0.5em;
         margin-top: 0.5em;
       }
     }
     .bottomTitle {
-      @include mix.font(var.$fontLato, 23px, 700, var.$col4, 1em 0 3em 0, 0);
+      @include mix.font(
+        var.$fontLato,
+        var.$smax600_23-33,
+        700,
+        var.$col4,
+        1em 0 3em 0,
+        0
+      );
       text-align: center;
     }
   }

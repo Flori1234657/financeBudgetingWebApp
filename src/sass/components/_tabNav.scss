@@ -1,0 +1,21 @@
+@use "../sassDry/_mixins" as mix;
+@use "../sassDry/_variables" as var;
+
+@mixin styles {
+  .phone--Nav {
+    font-size: var.$smax899_28-40;
+    ul {
+      li {
+        font-size: var.$smax899_23-33;
+
+        h5 {
+          font-size: var.$smax899_19-28;
+        }
+      }
+
+      .active {
+        font-size: var.$smax899_28-40;
+      }
+    }
+  }
+}

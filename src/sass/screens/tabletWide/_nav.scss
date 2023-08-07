@@ -1,0 +1,75 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .large--Nav {
+    width: 90%;
+    @include mix.flex-container(row, space-between, center);
+    border-bottom: 1px solid var.$col2;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+    &::after {
+      content: "";
+      display: block;
+      width: 6%;
+      height: 1px;
+      position: absolute;
+      left: -5.5%;
+      bottom: -1px;
+      background-color: var.$col2;
+    }
+    &::before {
+      content: "";
+      display: block;
+      width: 6%;
+      height: 1px;
+      position: absolute;
+      right: -5.5%;
+      bottom: -1px;
+      background-color: var.$col2;
+    }
+    figure {
+      width: 20%;
+      @include mix.flex-container(row, flex-start, center);
+      img {
+        width: 20%;
+      }
+      figcaption {
+        @include mix.font(
+          var.$fontLato,
+          16px,
+          600,
+          var.$col4,
+          1em 0,
+          0 0 0 0.3em
+        );
+      }
+    }
+    .deskNavItems {
+      width: 55%;
+      @include mix.flex-container(row, space-between, center);
+      li {
+        a {
+          @include mix.font(
+            var.$fontActor,
+            16px,
+            400,
+            var.$col4,
+            0.2em 0.5em,
+            0
+          );
+          border-radius: 0.6em;
+        }
+      }
+    }
+    .desk-nav-icons {
+      width: 7%;
+      @include mix.flex-container(row, space-between, center);
+      font-size: 23px;
+      svg {
+        color: var.$col3;
+      }
+    }
+  }
+}

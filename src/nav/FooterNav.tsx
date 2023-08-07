@@ -24,7 +24,7 @@ const FooterNav = () => {
   });
 
   return (
-    <nav>
+    <nav className="phone--Nav">
       <ul className="deskNavItems">
         <li className={changeNav.kreu ? "active" : ""}>
           <Link

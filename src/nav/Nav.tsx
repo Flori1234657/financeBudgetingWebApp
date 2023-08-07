@@ -2,15 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { IoNotificationsOutline as NotifIcon } from "react-icons/io5";
 import { CiUser as UserIcon } from "react-icons/ci";
+import LogoImg from "../assets/images/logo.png";
 
 const Nav = () => {
   const winWdth: number = window.innerWidth;
 
   return (
-    <nav>
+    <nav className="large--Nav">
       <figure className="leftNavBrand">
-        <img src="" alt="Web app Logo" />
-        <figcaption>Web Name</figcaption>
+        <img src={LogoImg} alt="Web app Logo" />
+        <figcaption>Gjeniu Buxhetor</figcaption>
       </figure>
       {winWdth > 899 ? (
         <>
@@ -32,12 +33,9 @@ const Nav = () => {
             </li>
           </ul>
           <ul className="desk-nav-icons">
-            <li>
-              <NotifIcon />
-            </li>
-            <li>
-              <UserIcon />
-            </li>
+            <NotifIcon />
+
+            <UserIcon />
           </ul>
         </>
       ) : (

@@ -1,0 +1,7 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+@use "./nav" as navigation;
+
+@mixin styles {
+  @include navigation.styles;
+}

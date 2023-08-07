@@ -2,14 +2,14 @@
 @use "../sassDry/_variables" as var;
 
 @mixin styles {
-  nav {
+  .phone--Nav {
     position: fixed;
     z-index: 1000;
     bottom: 0;
     width: 100%;
     background-color: var.$col3;
     @include mix.flex-container(row, center, center);
-    font-size: 19px;
+    font-size: var.$smax600_19-28;
     border-top-left-radius: 0.53em;
     border-top-right-radius: 0.53em;
     ul {
@@ -18,7 +18,7 @@
 
       li {
         width: 15%;
-        font-size: 16px;
+        font-size: var.$smax600_16-23;
         padding: 0.5em 0;
         text-align: center;
         a {
@@ -31,14 +31,21 @@
         }
         h5 {
           opacity: 0;
-          @include mix.font(var.$fontLato, 13px, 500, var.$col1, 0, 0);
+          @include mix.font(
+            var.$fontLato,
+            var.$smax600_13-19,
+            500,
+            var.$col1,
+            0,
+            0
+          );
           position: absolute;
           bottom: -1em;
         }
       }
 
       .active {
-        font-size: 19px;
+        font-size: var.$smax600_19-28;
         transform: translateY(-1.2em);
         background: var.$col3;
         border-radius: 50%;

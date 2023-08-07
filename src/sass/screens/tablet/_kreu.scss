@@ -1,0 +1,114 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+@use "../../components/tabNav" as tabNav;
+
+@mixin styles {
+  header {
+    font-size: var.$smax899_23-33;
+    div {
+      figure {
+        figcaption {
+          font-size: var.$smax899_28-40;
+        }
+      }
+    }
+  }
+  @include tabNav.styles;
+  .kreuMain {
+    h1 {
+      font-size: var.$smax899_33-48;
+    }
+    .kreuGraphCont {
+      .kreuGrphUp {
+        .krGrphUp-card1 {
+          h2:first-child {
+            font-size: var.$smax899_28-40;
+          }
+          h2:nth-child(2) {
+            font-size: var.$smax899_33-48;
+            span {
+              font-size: var.$smax899_23-33;
+            }
+          }
+          div {
+            h3 {
+              font-size: var.$smax899_19-28;
+            }
+            h4 {
+              font-size: var.$smax899_16-23;
+            }
+          }
+        }
+        .krGrphUp-card2 {
+          h2 {
+            font-size: var.$smax899_28-40;
+          }
+          > div {
+            font-size: var.$smax899_28-40;
+          }
+        }
+        .krGrphUp-card3 {
+          h2 {
+            font-size: var.$smax899_28-40;
+          }
+          > div {
+            .progressBarGroup {
+              h3 {
+                font-size: var.$smax899_23-33;
+              }
+              div {
+                h4 {
+                  font-size: var.$smax899_16-23;
+                }
+                meter {
+                  font-size: var.$smax899_16-23;
+                  height: 1.5em;
+                }
+              }
+            }
+          }
+          .sortOptionsGroup {
+            h3 {
+              font-size: var.$smax899_23-33;
+            }
+            select {
+              font-size: var.$smax899_23-33;
+            }
+            button {
+              font-size: var.$smax899_23-33;
+            }
+          }
+        }
+      }
+    }
+    .kreuGrphDown {
+      div:last-child {
+        max-width: 770px;
+        h2 {
+          font-size: var.$smax899_28-40;
+        }
+        div {
+          font-size: var.$smax899_23-33;
+
+          h3 {
+            font-size: var.$smax899_23-33;
+          }
+          div {
+            h4 {
+              font-size: var.$smax899_16-23;
+              span {
+                padding-left: 5em;
+              }
+            }
+          }
+        }
+      }
+      .grafikuMadh {
+        font-size: var.$smax899_28-40;
+      }
+    }
+    .bottomTitle {
+      font-size: var.$smax899_33-48;
+    }
+  }
+}
