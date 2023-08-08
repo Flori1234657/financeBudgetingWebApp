@@ -15,7 +15,7 @@ interface TogleNav {
 }
 
 const FooterNav = () => {
-  const [changeNav, setChangeNav] = useState({
+  const [changeNav, setChangeNav] = useState<TogleNav>({
     kreu: true,
     gjurmoShpenzimet: false,
     kuleta: false,

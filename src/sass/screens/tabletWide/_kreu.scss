@@ -4,4 +4,98 @@
 
 @mixin styles {
   @include navigation.styles;
+  .kreuMain {
+    > h1 {
+      font-size: 23px;
+      padding: 3em 0 0.5em 0;
+    }
+    .kreuGraphCont {
+      .kreuGrphUp {
+        width: 100%;
+        @include mix.flex-container(row, space-between, center);
+        .krGrphUp-card1 {
+          width: 25%;
+          aspect-ratio: 1.03;
+          h2:first-child {
+            font-size: 19px;
+          }
+          h2:nth-child(2) {
+            font-size: 19px;
+            span {
+              font-size: 19px;
+            }
+          }
+          div {
+            @include mix.flex-container(column, flex-start, flex-start);
+            h3 {
+              font-size: 11px;
+              padding: 2em 0 0 0;
+            }
+            h4 {
+              font-size: 16px;
+              padding: 0.5em 0 0 0;
+            }
+          }
+        }
+        .krGrphUp-card2 {
+          width: 33%;
+          h2 {
+            font-size: 16px;
+          }
+          > div {
+            font-size: 19px;
+          }
+        }
+        .krGrphUp-card3 {
+          width: 40%;
+
+          font-size: 19px;
+          h2 {
+            font-size: 16px;
+          }
+          > div {
+            width: 95%;
+            .progressBarGroup {
+              width: 90%;
+              h3 {
+                font-size: 13px;
+              }
+              > div {
+                meter {
+                  font-size: 11px;
+                }
+                h4 {
+                  font-size: 9px;
+                  span {
+                    margin-left: 15em;
+                  }
+                }
+              }
+            }
+            .sortOptionsGroup {
+              width: 45%;
+              align-self: flex-start;
+              display: grid;
+              grid-template: repeat(2, auto) / repeat(2, auto);
+              h3 {
+                font-size: 13px;
+              }
+              select {
+                width: 100%;
+                font-size: 13px;
+                margin-left: 0.5em;
+                grid-column: 2/3;
+                grid-row: 1/2;
+                align-self: self-end;
+              }
+              button {
+                font-size: 13px;
+                margin-top: 0.3em;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
