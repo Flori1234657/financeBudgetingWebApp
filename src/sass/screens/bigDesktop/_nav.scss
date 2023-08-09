@@ -38,7 +38,7 @@
       figcaption {
         @include mix.font(
           var.$fontLato,
-          var.$smax1199_16-19,
+          var.$smax3000_28-48,
           600,
           var.$col4,
           1em 0,
@@ -53,7 +53,7 @@
         a {
           @include mix.font(
             var.$fontActor,
-            var.$smax1199_16-19,
+            var.$smax3000_28-48,
             400,
             var.$col4,
             0.2em 0.5em,
@@ -66,7 +66,7 @@
     .desk-nav-icons {
       width: 7%;
       @include mix.flex-container(row, space-between, center);
-      font-size: var.$smax1199_23-28;
+      font-size: var.$smax3000_40-69;
       svg {
         color: var.$col3;
       }

@@ -6,66 +6,67 @@
   @include navigation.styles;
   .kreuMain {
     > h1 {
-      font-size: 23px;
-      padding: 3em 0 0.5em 0;
+      font-size: var.$smax1199_23-28;
+      padding: 3.5em 0 1.5em 0;
     }
     .kreuGraphCont {
       .kreuGrphUp {
         width: 100%;
         @include mix.flex-container(row, space-between, center);
         .krGrphUp-card1 {
+          margin-top: 0;
           width: 25%;
-          aspect-ratio: 1.03;
           h2:first-child {
-            font-size: 19px;
+            font-size: var.$smax1199_19-23;
           }
           h2:nth-child(2) {
-            font-size: 19px;
+            font-size: var.$smax1199_23-28;
             span {
-              font-size: 19px;
+              font-size: var.$smax1199_23-28;
             }
           }
           div {
             @include mix.flex-container(column, flex-start, flex-start);
             h3 {
-              font-size: 11px;
+              font-size: var.$smax1199_13-16;
               padding: 2em 0 0 0;
             }
             h4 {
-              font-size: 16px;
-              padding: 0.5em 0 0 0;
+              font-size: var.$smax1199_16-19;
+              padding: 0.5em 0 3.6em 0;
             }
           }
         }
         .krGrphUp-card2 {
+          margin-top: 0;
           width: 33%;
           h2 {
-            font-size: 16px;
+            font-size: var.$smax1199_16-19;
           }
           > div {
-            font-size: 19px;
+            font-size: var.$smax1199_19-16;
           }
         }
         .krGrphUp-card3 {
           width: 40%;
-
-          font-size: 19px;
+          margin-top: 0;
+          font-size: var.$smax1199_19-23;
           h2 {
-            font-size: 16px;
+            font-size: var.$smax1199_16-19;
           }
           > div {
             width: 95%;
             .progressBarGroup {
               width: 90%;
               h3 {
-                font-size: 13px;
+                font-size: var.$smax1199_13-16;
               }
               > div {
                 meter {
-                  font-size: 11px;
+                  font-size: var.$smax1199_11-13;
                 }
                 h4 {
-                  font-size: 9px;
+                  font-size: var.$smax1199_9-11;
                   span {
                     margin-left: 15em;
                   }
@@ -78,24 +79,63 @@
               display: grid;
               grid-template: repeat(2, auto) / repeat(2, auto);
               h3 {
-                font-size: 13px;
+                font-size: var.$smax1199_13-16;
               }
               select {
                 width: 100%;
-                font-size: 13px;
+                font-size: var.$smax1199_13-16;
                 margin-left: 0.5em;
                 grid-column: 2/3;
                 grid-row: 1/2;
                 align-self: self-end;
               }
               button {
-                font-size: 13px;
+                font-size: var.$smax1199_13-16;
                 margin-top: 0.3em;
               }
             }
           }
         }
       }
+      .kreuGrphDown {
+        @include mix.flex-container(row, space-between, center);
+        .grafikuMadh {
+          width: 59%;
+
+          font-size: var.$smax1199_19-23;
+        }
+        > div:nth-child(2) {
+          order: 2;
+          font-size: var.$smax1199_19-23;
+          width: 40%;
+          aspect-ratio: 1.36;
+          > h2 {
+            font-size: var.$smax1199_16-19;
+          }
+          .progressBarGroup {
+            font-size: none;
+            width: 92.5%;
+            h3 {
+              font-size: var.$smax1199_13-16;
+            }
+            div {
+              font-size: var.$smax1199_19-23;
+              width: 70%;
+              h4 {
+                font-size: var.$smax1199_11-13;
+                span {
+                  margin-left: 7em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottomTitle {
+      font-size: var.$smax1199_33-40;
+      margin: 0 auto;
+      padding-bottom: 1em;
     }
   }
 }

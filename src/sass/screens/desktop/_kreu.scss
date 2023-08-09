@@ -1,0 +1,109 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+@use "./nav" as navigation;
+
+@mixin styles {
+  @include navigation.styles;
+  .kreuMain {
+    > h1 {
+      font-size: var.$smax1799_23-33;
+    }
+    .kreuGraphCont {
+      .kreuGrphUp {
+        .krGrphUp-card1 {
+          h2:first-child {
+            font-size: var.$smax1799_23-33;
+          }
+          h2:nth-child(2) {
+            font-size: var.$smax1799_23-33;
+            span {
+              font-size: var.$smax1799_23-33;
+            }
+          }
+          div {
+            h3 {
+              font-size: var.$smax1799_16-23;
+            }
+            h4 {
+              font-size: var.$smax1799_19-28;
+              padding-bottom: 3.9em;
+            }
+          }
+        }
+        .krGrphUp-card2 {
+          h2 {
+            font-size: var.$smax1799_19-28;
+          }
+          > div {
+            font-size: var.$smax1799_16-19;
+          }
+        }
+        .krGrphUp-card3 {
+          font-size: var.$smax1799_23-33;
+          h2 {
+            font-size: var.$smax1799_19-28;
+          }
+          > div {
+            .progressBarGroup {
+              h3 {
+                font-size: var.$smax1799_16-23;
+              }
+              > div {
+                meter {
+                  font-size: var.$smax1799_13-19;
+                }
+                h4 {
+                  font-size: var.$smax1799_11-16;
+                  //   span {
+                  //     margin-left: 15em;
+                  //   }
+                }
+              }
+            }
+            .sortOptionsGroup {
+              h3 {
+                font-size: var.$smax1799_16-23;
+              }
+              select {
+                font-size: var.$smax1799_16-23;
+              }
+              button {
+                font-size: var.$smax1799_16-23;
+              }
+            }
+          }
+        }
+      }
+      .kreuGrphDown {
+        .grafikuMadh {
+          font-size: var.$smax1799_23-33;
+        }
+        > div:nth-child(2) {
+          font-size: var.$smax1799_23-33;
+
+          > h2 {
+            font-size: var.$smax1799_19-28;
+          }
+          .progressBarGroup {
+            h3 {
+              font-size: var.$smax1799_16-23;
+            }
+            div {
+              font-size: var.$smax1799_23-33;
+
+              h4 {
+                font-size: var.$smax1799_13-19;
+                // span {
+                //   margin-left: 7em;
+                // }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottomTitle {
+      font-size: var.$smax1799_40-57;
+    }
+  }
+}

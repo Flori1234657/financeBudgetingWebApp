@@ -82,12 +82,13 @@
       }
     }
     .kreuGrphDown {
-      div:last-child {
+      > div:last-child {
         max-width: 770px;
         h2 {
           font-size: var.$smax899_28-40;
         }
         div {
+          max-width: none;
           font-size: var.$smax899_23-33;
 
           h3 {

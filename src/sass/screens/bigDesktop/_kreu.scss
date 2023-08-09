@@ -1,0 +1,111 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+@use "./nav" as navigation;
+
+@mixin styles {
+  @include navigation.styles;
+  .kreuMain {
+    > h1 {
+      font-size: var.$smax3000_33-57;
+    }
+    .kreuGraphCont {
+      .kreuGrphUp {
+        .krGrphUp-card1 {
+          font-size: var.$smax3000_19-33;
+          h2:first-child {
+            font-size: var.$smax3000_33-57;
+          }
+          h2:nth-child(2) {
+            font-size: var.$smax3000_33-57;
+            span {
+              font-size: var.$smax3000_33-57;
+            }
+          }
+          div {
+            h3 {
+              font-size: var.$smax3000_23-40;
+            }
+            h4 {
+              font-size: var.$smax3000_28-48;
+              padding-bottom: 3.9em;
+            }
+          }
+        }
+        .krGrphUp-card2 {
+          font-size: var.$smax3000_19-33;
+          h2 {
+            font-size: var.$smax3000_28-48;
+          }
+          > div {
+            font-size: var.$smax3000_19-33;
+          }
+        }
+        .krGrphUp-card3 {
+          font-size: var.$smax3000_33-57;
+          h2 {
+            font-size: var.$smax3000_28-48;
+          }
+          > div {
+            .progressBarGroup {
+              h3 {
+                font-size: var.$smax3000_23-40;
+              }
+              > div {
+                meter {
+                  font-size: var.$smax3000_19-33;
+                }
+                h4 {
+                  font-size: var.$smax3000_16-28;
+                  //   span {
+                  //     margin-left: 15em;
+                  //   }
+                }
+              }
+            }
+            .sortOptionsGroup {
+              h3 {
+                font-size: var.$smax3000_23-40;
+              }
+              select {
+                font-size: var.$smax3000_23-40;
+              }
+              button {
+                font-size: var.$smax3000_23-40;
+              }
+            }
+          }
+        }
+      }
+      .kreuGrphDown {
+        .grafikuMadh {
+          font-size: var.$smax3000_33-57;
+        }
+        > div:nth-child(2) {
+          font-size: var.$smax3000_33-57;
+          max-width: none;
+          > h2 {
+            font-size: var.$smax3000_28-48;
+          }
+          .progressBarGroup {
+            h3 {
+              font-size: var.$smax3000_23-40;
+            }
+            div {
+              font-size: var.$smax3000_33-57;
+
+              h4 {
+                font-size: var.$smax3000_19-33;
+                // span {
+                //   margin-left: 7em;
+                // }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottomTitle {
+      font-size: var.$smax3000_57-99;
+    }
+  }
+}
