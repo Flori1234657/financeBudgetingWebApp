@@ -51,11 +51,17 @@ const LineChart = () => {
       x: {
         ticks: {
           color: "#dafffb", // Change the x-axis label text color here
+          font: {
+            size: 7.5, // Change X-axis label font size
+          },
         },
       },
       y: {
         ticks: {
           color: "#dafffb", // Change the y-axis label text color here
+          font: {
+            size: 7.5, // Change Y-axis label font size
+          },
         },
       },
     },

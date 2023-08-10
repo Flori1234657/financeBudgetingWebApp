@@ -50,10 +50,12 @@ $smax899_33-48: clamp(2.06rem, calc(0.17rem + 5.03vw), 3rem);
 $smax1199_9-11: clamp(0.56rem, calc(0.19rem + 0.67vw), 0.69rem);
 $smax1199_11-13: clamp(0.69rem, calc(0.31rem + 0.67vw), 0.81rem);
 $smax1199_13-16: clamp(0.81rem, calc(0.25rem + 1vw), 1rem);
+$smax1199_16-13: clamp(0.81rem, calc(1.56rem + -1vw), 1rem);
 $smax1199_16-19: clamp(1rem, calc(0.44rem + 1vw), 1.19rem);
 $smax1199_19-16: clamp(1rem, calc(1.75rem + -1vw), 1.19rem);
 $smax1199_19-23: clamp(1.19rem, calc(0.43rem + 1.34vw), 1.44rem);
 $smax1199_23-28: clamp(1.44rem, calc(0.5rem + 1.67vw), 1.75rem);
+$smax1199_28-33: clamp(1.75rem, calc(0.81rem + 1.67vw), 2.06rem);
 $smax1199_33-40: clamp(2.06rem, calc(0.75rem + 2.34vw), 2.5rem);
 
 //1200-1799
@@ -63,7 +65,9 @@ $smax1799_16-19: clamp(1rem, calc(0.62rem + 0.5vw), 1.19rem);
 $smax1799_16-23: clamp(1rem, calc(0.12rem + 1.17vw), 1.44rem);
 $smax1799_19-28: clamp(1.19rem, calc(0.06rem + 1.5vw), 1.75rem);
 $smax1799_23-33: clamp(1.44rem, calc(0.19rem + 1.67vw), 2.06rem);
+$smax1799_23-28: clamp(1.44rem, calc(0.81rem + 0.83vw), 1.75rem);
 $smax1799_28-40: clamp(1.75rem, calc(0.25rem + 2vw), 2.5rem);
+$smax1799_33-48: clamp(2.06rem, calc(0.18rem + 2.5vw), 3rem);
 $smax1799_40-57: clamp(2.5rem, calc(0.37rem + 2.84vw), 3.56rem);
 
 //1800-3000
@@ -73,4 +77,5 @@ $smax3000_23-40: clamp(1.44rem, calc(-0.16rem + 1.42vw), 2.5rem);
 $smax3000_28-48: clamp(1.75rem, calc(-0.12rem + 1.67vw), 3rem);
 $smax3000_33-57: clamp(2.06rem, calc(-0.19rem + 2vw), 3.56rem);
 $smax3000_40-69: clamp(2.5rem, calc(-0.22rem + 2.42vw), 4.31rem);
+$smax3000_48-83: clamp(3rem, calc(-0.28rem + 2.92vw), 5.19rem);
 $smax3000_57-99: clamp(3.56rem, calc(-0.38rem + 3.5vw), 6.19rem);

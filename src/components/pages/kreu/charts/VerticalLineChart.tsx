@@ -41,14 +41,14 @@ const VerticalLineChart = () => {
           x: {
             ticks: {
               font: {
-                size: 9, // Change X-axis label font size
+                size: 7.5, // Change X-axis label font size
               },
             },
           },
           y: {
             ticks: {
               font: {
-                size: 9, // Change Y-axis label font size
+                size: 7.5, // Change Y-axis label font size
               },
             },
           },

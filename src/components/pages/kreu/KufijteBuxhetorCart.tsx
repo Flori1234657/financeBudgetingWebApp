@@ -37,9 +37,12 @@ const KufijteBuxhetorCart: React.FC = () => {
     >
       <h2>Kufijtë buxhetor</h2>
       <div aria-label="Group for progress bar's and some option's">
-        {provObj.map((el) => (
-          <ProgessBarsWithText key={`progressbarswthtxt${el.id}`} {...el} />
-        ))}
+        <div className="kreu_kufijteBuxhetor--card">
+          {provObj.map((el) => (
+            <ProgessBarsWithText key={`progressbarswthtxt${el.id}`} {...el} />
+          ))}
+        </div>
+
         <div className="sortOptionsGroup" aria-label="Options group">
           <h3>Renditja</h3>
           <select>

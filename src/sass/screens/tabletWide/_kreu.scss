@@ -5,8 +5,9 @@
 @mixin styles {
   @include navigation.styles;
   .kreuMain {
+    width: 80%;
     > h1 {
-      font-size: var.$smax1199_23-28;
+      font-size: var.$smax1199_19-23;
       padding: 3.5em 0 1.5em 0;
     }
     .kreuGraphCont {
@@ -17,22 +18,22 @@
           margin-top: 0;
           width: 25%;
           h2:first-child {
-            font-size: var.$smax1199_19-23;
+            font-size: var.$smax1199_16-19;
           }
           h2:nth-child(2) {
-            font-size: var.$smax1199_23-28;
+            font-size: var.$smax1199_19-23;
             span {
-              font-size: var.$smax1199_23-28;
+              font-size: var.$smax1199_19-23;
             }
           }
           div {
             @include mix.flex-container(column, flex-start, flex-start);
             h3 {
-              font-size: var.$smax1199_13-16;
+              font-size: var.$smax1199_11-13;
               padding: 2em 0 0 0;
             }
             h4 {
-              font-size: var.$smax1199_16-19;
+              font-size: var.$smax1199_13-16;
               padding: 0.5em 0 3.6em 0;
             }
           }
@@ -41,57 +42,59 @@
           margin-top: 0;
           width: 33%;
           h2 {
-            font-size: var.$smax1199_16-19;
+            font-size: var.$smax1199_13-16;
           }
           > div {
-            font-size: var.$smax1199_19-16;
+            width: 85%;
+            font-size: var.$smax1199_16-13;
           }
         }
         .krGrphUp-card3 {
           width: 40%;
           margin-top: 0;
-          font-size: var.$smax1199_19-23;
+          font-size: var.$smax1199_16-19;
           h2 {
-            font-size: var.$smax1199_16-19;
+            font-size: var.$smax1199_13-16;
+            padding-bottom: 0.9em;
           }
+
           > div {
             width: 95%;
-            .progressBarGroup {
-              width: 90%;
-              h3 {
-                font-size: var.$smax1199_13-16;
-              }
-              > div {
-                meter {
+            .kreu_kufijteBuxhetor--card {
+              .progressBarGroup {
+                h3 {
                   font-size: var.$smax1199_11-13;
                 }
-                h4 {
-                  font-size: var.$smax1199_9-11;
-                  span {
-                    margin-left: 15em;
+                > div {
+                  meter {
+                    font-size: var.$smax1199_11-13;
+                  }
+                  h4 {
+                    font-size: var.$smax1199_9-11;
+                    span {
+                      margin-left: 14em;
+                    }
                   }
                 }
               }
             }
+
             .sortOptionsGroup {
-              width: 45%;
+              width: 95%;
               align-self: flex-start;
-              display: grid;
-              grid-template: repeat(2, auto) / repeat(2, auto);
+              @include mix.flex-container($align-items: center);
               h3 {
-                font-size: var.$smax1199_13-16;
+                font-size: var.$smax1199_11-13;
+                padding: 0;
               }
               select {
-                width: 100%;
-                font-size: var.$smax1199_13-16;
-                margin-left: 0.5em;
-                grid-column: 2/3;
-                grid-row: 1/2;
-                align-self: self-end;
+                width: 30%;
+                font-size: var.$smax1199_11-13;
+                margin-left: 1em;
               }
               button {
-                font-size: var.$smax1199_13-16;
-                margin-top: 0.3em;
+                font-size: var.$smax1199_11-13;
+                margin-left: 8em;
               }
             }
           }
@@ -102,27 +105,27 @@
         .grafikuMadh {
           width: 59%;
 
-          font-size: var.$smax1199_19-23;
+          font-size: var.$smax1199_16-19;
         }
         > div:nth-child(2) {
           order: 2;
-          font-size: var.$smax1199_19-23;
+          font-size: var.$smax1199_16-19;
           width: 40%;
           aspect-ratio: 1.36;
           > h2 {
-            font-size: var.$smax1199_16-19;
+            font-size: var.$smax1199_13-16;
           }
           .progressBarGroup {
             font-size: none;
             width: 92.5%;
             h3 {
-              font-size: var.$smax1199_13-16;
+              font-size: var.$smax1199_11-13;
             }
             div {
-              font-size: var.$smax1199_19-23;
+              font-size: var.$smax1199_16-19;
               width: 70%;
               h4 {
-                font-size: var.$smax1199_11-13;
+                font-size: var.$smax1199_9-11;
                 span {
                   margin-left: 7em;
                 }
@@ -133,7 +136,7 @@
       }
     }
     .bottomTitle {
-      font-size: var.$smax1199_33-40;
+      font-size: var.$smax1199_28-33;
       margin: 0 auto;
       padding-bottom: 1em;
     }

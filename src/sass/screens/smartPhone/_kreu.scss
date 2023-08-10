@@ -136,58 +136,66 @@
               0
             );
           }
+
           > div {
             width: 92.5%;
             align-self: center;
             @include mix.flex-container(column);
-            .progressBarGroup {
+            .kreu_kufijteBuxhetor--card {
               width: 100%;
-              @include mix.flex-container(row, space-between, center);
-              h3 {
-                @include mix.font(
-                  var.$fontActor,
-                  var.$smax600_16-23,
-                  500,
-                  var.$col4,
-                  0 0 0 0.5em,
-                  0
-                );
-              }
-              div {
-                width: 70%;
-                @include mix.flex-container(column);
-                meter {
-                  width: 100%;
-                }
-                meter::-webkit-meter-bar {
-                  background-color: var.$col3;
-                }
-                meter::-webkit-meter-optimum-value {
-                  background-color: var.$col1;
-                }
-                /* Style the meter fill */
-                //  meter::-webkit-meter-optimum-value,
-                //  meter::-webkit-meter-suboptimum-value,
-                //  meter::-webkit-meter-even-less-good-value {
-                //   background-color: green;
-                // }
-
-                /* Style the meter fill with different colors at specific values */
-                //  meter[value="0"]::-webkit-meter-optimum-value,
-                //  meter[value="1"]::-webkit-meter-optimum-value {
-                //   background-color: red;
-                // }
-                h4 {
+              max-height: 120px;
+              overflow-y: scroll;
+              @include mix.hideScrollbars;
+              @include mix.flex-container(column, flex-start, center);
+              .progressBarGroup {
+                width: 100%;
+                @include mix.flex-container(row, space-between, center);
+                h3 {
                   @include mix.font(
                     var.$fontActor,
-                    var.$smax600_11-16,
+                    var.$smax600_16-23,
                     500,
                     var.$col4,
-                    0,
+                    0 0 0 0.5em,
                     0
                   );
-                  span {
-                    margin-left: 10em;
+                }
+                div {
+                  width: 70%;
+                  @include mix.flex-container(column);
+                  meter {
+                    width: 100%;
+                  }
+                  meter::-webkit-meter-bar {
+                    background-color: var.$col3;
+                  }
+                  meter::-webkit-meter-optimum-value {
+                    background-color: var.$col1;
+                  }
+                  /* Style the meter fill */
+                  //  meter::-webkit-meter-optimum-value,
+                  //  meter::-webkit-meter-suboptimum-value,
+                  //  meter::-webkit-meter-even-less-good-value {
+                  //   background-color: green;
+                  // }
+
+                  /* Style the meter fill with different colors at specific values */
+                  //  meter[value="0"]::-webkit-meter-optimum-value,
+                  //  meter[value="1"]::-webkit-meter-optimum-value {
+                  //   background-color: red;
+                  // }
+                  h4 {
+                    @include mix.font(
+                      var.$fontActor,
+                      var.$smax600_11-16,
+                      500,
+                      var.$col4,
+                      0,
+                      0
+                    );
+                    span {
+                      margin-left: 10em;
+                    }
                   }
                 }
               }

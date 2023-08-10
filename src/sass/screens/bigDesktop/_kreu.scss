@@ -6,49 +6,49 @@
   @include navigation.styles;
   .kreuMain {
     > h1 {
-      font-size: var.$smax3000_33-57;
+      font-size: var.$smax3000_28-48;
     }
     .kreuGraphCont {
       .kreuGrphUp {
         .krGrphUp-card1 {
-          font-size: var.$smax3000_19-33;
+          font-size: var.$smax3000_16-28;
           h2:first-child {
-            font-size: var.$smax3000_33-57;
+            font-size: var.$smax3000_28-48;
           }
           h2:nth-child(2) {
-            font-size: var.$smax3000_33-57;
+            font-size: var.$smax3000_28-48;
             span {
-              font-size: var.$smax3000_33-57;
+              font-size: var.$smax3000_28-48;
             }
           }
           div {
             h3 {
-              font-size: var.$smax3000_23-40;
+              font-size: var.$smax3000_19-33;
             }
             h4 {
-              font-size: var.$smax3000_28-48;
+              font-size: var.$smax3000_23-40;
               padding-bottom: 3.9em;
             }
           }
         }
         .krGrphUp-card2 {
-          font-size: var.$smax3000_19-33;
+          font-size: var.$smax3000_16-28;
           h2 {
-            font-size: var.$smax3000_28-48;
+            font-size: var.$smax3000_23-40;
           }
           > div {
-            font-size: var.$smax3000_19-33;
+            font-size: var.$smax3000_16-28;
           }
         }
         .krGrphUp-card3 {
-          font-size: var.$smax3000_33-57;
+          font-size: var.$smax3000_28-48;
           h2 {
-            font-size: var.$smax3000_28-48;
+            font-size: var.$smax3000_23-40;
           }
           > div {
             .progressBarGroup {
               h3 {
-                font-size: var.$smax3000_23-40;
+                font-size: var.$smax3000_19-33;
               }
               > div {
                 meter {
@@ -64,13 +64,13 @@
             }
             .sortOptionsGroup {
               h3 {
-                font-size: var.$smax3000_23-40;
+                font-size: var.$smax3000_19-33;
               }
               select {
-                font-size: var.$smax3000_23-40;
+                font-size: var.$smax3000_19-33;
               }
               button {
-                font-size: var.$smax3000_23-40;
+                font-size: var.$smax3000_19-33;
               }
             }
           }
@@ -78,23 +78,23 @@
       }
       .kreuGrphDown {
         .grafikuMadh {
-          font-size: var.$smax3000_33-57;
+          font-size: var.$smax3000_28-48;
         }
         > div:nth-child(2) {
-          font-size: var.$smax3000_33-57;
+          font-size: var.$smax3000_28-48;
           max-width: none;
           > h2 {
-            font-size: var.$smax3000_28-48;
+            font-size: var.$smax3000_23-40;
           }
           .progressBarGroup {
             h3 {
-              font-size: var.$smax3000_23-40;
+              font-size: var.$smax3000_19-33;
             }
             div {
-              font-size: var.$smax3000_33-57;
+              font-size: var.$smax3000_28-48;
 
               h4 {
-                font-size: var.$smax3000_19-33;
+                font-size: var.$smax3000_16-28;
                 // span {
                 //   margin-left: 7em;
                 // }
@@ -105,7 +105,7 @@
       }
     }
     .bottomTitle {
-      font-size: var.$smax3000_57-99;
+      font-size: var.$smax3000_48-83;
     }
   }
 }

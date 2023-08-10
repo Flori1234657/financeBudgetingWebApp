@@ -3,7 +3,7 @@
 
 @mixin styles {
   .large--Nav {
-    width: 90%;
+    width: 80%;
     @include mix.flex-container(row, space-between, center);
     border-bottom: 1px solid var.$col2;
     position: fixed;
@@ -12,21 +12,21 @@
     &::after {
       content: "";
       display: block;
-      width: 6%;
+      width: 13%;
       height: 1px;
       position: absolute;
-      left: -5.5%;
-      bottom: -1px;
+      left: -12.5%;
+      bottom: 0;
       background-color: var.$col2;
     }
     &::before {
       content: "";
       display: block;
-      width: 6%;
+      width: 13%;
       height: 1px;
       position: absolute;
-      right: -5.5%;
-      bottom: -1px;
+      right: -12.5%;
+      bottom: 0;
       background-color: var.$col2;
     }
     figure {
@@ -38,7 +38,7 @@
       figcaption {
         @include mix.font(
           var.$fontLato,
-          var.$smax3000_28-48,
+          var.$smax3000_23-40,
           600,
           var.$col4,
           1em 0,
@@ -53,7 +53,7 @@
         a {
           @include mix.font(
             var.$fontActor,
-            var.$smax3000_28-48,
+            var.$smax3000_23-40,
             400,
             var.$col4,
             0.2em 0.5em,
@@ -66,7 +66,7 @@
     .desk-nav-icons {
       width: 7%;
       @include mix.flex-container(row, space-between, center);
-      font-size: var.$smax3000_40-69;
+      font-size: var.$smax3000_33-57;
       svg {
         color: var.$col3;
       }

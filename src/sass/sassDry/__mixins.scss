@@ -86,3 +86,22 @@
   margin-top: 0.5em;
   border-radius: 0.5em;
 }
+@mixin hideScrollbars {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  /* Hide the default scrollbar styles for WebKit (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 0.5em; /* Adjust to your preference */
+    height: 0.5em; /* Adjust to your preference */
+  }
+
+  /* Hide the track of the scrollbar */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Hide the scrollbar thumb */
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
+}

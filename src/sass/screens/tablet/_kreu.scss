@@ -52,17 +52,19 @@
             font-size: var.$smax899_28-40;
           }
           > div {
-            .progressBarGroup {
-              h3 {
-                font-size: var.$smax899_23-33;
-              }
-              div {
-                h4 {
-                  font-size: var.$smax899_16-23;
+            .kreu_kufijteBuxhetor--card {
+              .progressBarGroup {
+                h3 {
+                  font-size: var.$smax899_23-33;
                 }
-                meter {
-                  font-size: var.$smax899_16-23;
-                  height: 1.5em;
+                div {
+                  h4 {
+                    font-size: var.$smax899_16-23;
+                  }
+                  meter {
+                    font-size: var.$smax899_16-23;
+                    height: 1.5em;
+                  }
                 }
               }
             }
