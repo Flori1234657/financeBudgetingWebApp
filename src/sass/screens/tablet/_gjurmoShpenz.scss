@@ -1,0 +1,91 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .gjurmoShpenzimetMain {
+    h1:first-child {
+      font-size: var.$smax899_33-48;
+    }
+    .shpenzimetMiddleSection {
+      form {
+        @include mix.phoneCardsKreu(100%, var.$smax899_19-28);
+        h2:first-child {
+          font-size: var.$smax899_28-40;
+        }
+        div {
+          label {
+            font-size: var.$smax899_23-33;
+          }
+          input,
+          select,
+          textarea {
+            font-size: var.$smax899_19-28;
+          }
+          h5 {
+            font-size: var.$smax899_19-28;
+          }
+        }
+        button {
+          font-size: var.$smax899_19-28;
+          margin-left: 1.2em;
+        }
+      }
+      > div {
+        @include mix.phoneCardsKreu(100%, var.$smax899_19-28);
+        section {
+          h2:first-child {
+            font-size: var.$smax899_28-40;
+          }
+          > div {
+            div:first-child {
+              input {
+                font-size: var.$smax899_19-28;
+              }
+              button {
+                font-size: var.$smax899_19-28;
+              }
+            }
+            div:nth-child(2) {
+              h3 {
+                font-size: var.$smax899_23-33;
+              }
+              button {
+                font-size: var.$smax899_19-28;
+              }
+            }
+          }
+          ul {
+            li {
+              font-size: var.$smax899_23-33;
+            }
+          }
+        }
+        > ul {
+          font-size: var.$smax899_28-40;
+
+          > li {
+            font-size: var.$smax899_28-40;
+            > div {
+              h4 {
+                font-size: var.$smax899_19-28;
+              }
+              h3 {
+                font-size: var.$smax899_19-28;
+                margin-left: 17em;
+              }
+            }
+            // # Collapsed ul InshaaAllah
+            ul {
+              li {
+                font-size: var.$smax899_19-28;
+              }
+            }
+          }
+        }
+      }
+    }
+    h1:last-child {
+      font-size: var.$smax899_33-48;
+    }
+  }
+}

@@ -1,8 +1,10 @@
 @use "./login" as login;
 @use "../../sassDry/_mixins" as mix;
 @use "../tablet/kreu" as kreu;
+@use "./gjurmoShpenz" as gjurmoShpenzimet;
 
 @mixin tabStyles() {
   @include login.styles;
   @include kreu.styles;
+  @include gjurmoShpenzimet.styles;
 }

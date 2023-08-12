@@ -36,8 +36,6 @@
   }
   @include phnNv.styles;
   .kreuMain {
-    width: 90%;
-    @include mix.flex-container(column);
     h1 {
       @include mix.font(
         var.$fontMerr,

@@ -31,6 +31,8 @@ const ListaShpenzimeve = () => {
           <li aria-label="hygiene">Higjenike</li>
           <li aria-label="wearing's">Veshje</li>
           <li aria-label="home">Shtëpiake</li>
+          <li aria-label="wearing's">Veshje</li>
+          <li aria-label="home">Shtëpiake</li>
         </ul>
       </section>
 

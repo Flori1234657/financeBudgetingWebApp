@@ -25,9 +25,13 @@ a {
 }
 select:focus,
 input:focus,
+textarea,
 button:focus {
   outline: none;
   border: none;
+}
+button {
+  cursor: pointer;
 }
 
 html {

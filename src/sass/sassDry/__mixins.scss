@@ -78,11 +78,11 @@
   background-attachment: $attachment;
 }
 
-@mixin phoneCardsKreu($wdth: 90%) {
+@mixin phoneCardsKreu($wdth: 90%, $fs: 19px) {
   width: $wdth;
   @include flex-container(column);
   background-color: var.$col2;
-  font-size: 19px;
+  font-size: $fs;
   margin-top: 0.5em;
   border-radius: 0.5em;
 }

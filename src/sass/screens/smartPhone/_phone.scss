@@ -1,8 +1,14 @@
 @use "./login" as login;
 @use "./kreu" as kreu;
+@use "./gjurmoShpenz" as gjurmoShpenzimet;
 @use "../../sassDry/_mixins" as mix;
 
 @mixin phoneStyles() {
+  main {
+    width: 90%;
+    @include mix.flex-container(column);
+  }
   @include login.styles;
   @include kreu.styles;
+  @include gjurmoShpenzimet.styles;
 }

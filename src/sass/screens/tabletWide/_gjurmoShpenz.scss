@@ -1,0 +1,105 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .gjurmoShpenzimetMain {
+    width: 80%;
+    h1:first-child {
+      font-size: var.$smax1199_19-23;
+      padding-top: 3em;
+    }
+    .shpenzimetMiddleSection {
+      align-self: center;
+      @include mix.flex-container(row, space-between, center);
+      form {
+        @include mix.phoneCardsKreu(100%, var.$smax1199_19-23);
+        margin-top: 0;
+        h2:first-child {
+          font-size: var.$smax1199_16-19;
+        }
+        div {
+          label {
+            font-size: var.$smax1199_13-16;
+          }
+          input,
+          select,
+          textarea {
+            font-size: var.$smax1199_11-13;
+          }
+          h5 {
+            font-size: var.$smax1199_11-13;
+          }
+        }
+        button {
+          font-size: var.$smax1199_11-13;
+          margin-left: 1.2em;
+        }
+        width: 43%;
+      }
+      > div {
+        @include mix.phoneCardsKreu(100%, var.$smax1199_19-23);
+        section {
+          h2:first-child {
+            font-size: var.$smax1199_16-19;
+          }
+          > div {
+            @include mix.flex-container(row, space-between, center);
+            div:first-child {
+              input {
+                font-size: var.$smax1199_11-13;
+              }
+              button {
+                font-size: var.$smax1199_11-13;
+              }
+              width: 55%;
+            }
+            div:nth-child(2) {
+              h3 {
+                font-size: var.$smax1199_13-16;
+              }
+              button {
+                font-size: var.$smax1199_11-13;
+              }
+              width: 30%;
+              justify-content: flex-end;
+            }
+          }
+          ul {
+            li {
+              font-size: var.$smax1199_13-16;
+            }
+          }
+        }
+        > ul {
+          font-size: var.$smax1199_16-19;
+          height: clamp(17.25rem, calc(7.09rem + 18.06vw), 20.63rem); //276-330
+
+          > li {
+            font-size: var.$smax1199_16-19;
+            > div {
+              h4 {
+                font-size: var.$smax1199_11-13;
+              }
+              h3 {
+                font-size: var.$smax1199_11-13;
+                margin-left: 23em;
+              }
+            }
+            // # Collapsed ul InshaaAllah
+            ul {
+              li {
+                font-size: var.$smax1199_11-13;
+              }
+            }
+          }
+        }
+        width: 55%;
+        margin-top: 0;
+      }
+    }
+    h1:last-child {
+      font-size: var.$smax1199_28-33;
+      padding-bottom: 1.5em;
+    }
+  }
+}

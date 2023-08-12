@@ -3,10 +3,9 @@ import KuletaIMeCart from "../../components/pages/kreu/KuletaIMeCart";
 import CategoryExpsChart from "../../components/pages/kreu/CategoryExpsChart";
 import KufijteBuxhetorCart from "../../components/pages/kreu/KufijteBuxhetorCart";
 import QëllimetFinanciareProgress from "../../components/pages/kreu/QëllimetFinanciareProgress";
-import WebLogo from "../../assets/images/logo.png";
-import ProfilImg from "../../assets/images/profilImg.png";
 import { useLocation } from "react-router-dom";
 import LineChart from "../../components/pages/kreu/charts/LineChart";
+import PhoneHeader from "../../components/universal/PhoneHeader";
 
 const Kreu: React.FC<{
   setShowNav: React.Dispatch<React.SetStateAction<boolean>>;
@@ -20,15 +19,7 @@ const Kreu: React.FC<{
   return (
     <>
       {window.innerWidth < 900 ? (
-        <header>
-          <div aria-label="content container">
-            <figure>
-              <img src={WebLogo} alt="Website Logo" />
-              <figcaption>Gjeniu Buxhetor</figcaption>
-            </figure>
-            <img src={ProfilImg} alt="Profile Img" />
-          </div>
-        </header>
+        <PhoneHeader/>
       ) : (
         ""
       )}

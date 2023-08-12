@@ -1,0 +1,282 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .gjurmoShpenzimetMain {
+    h1:first-child {
+      @include mix.font(
+        var.$fontMerr,
+        var.$smax600_23-33,
+        600,
+        var.$col4,
+        1em 0,
+        0
+      );
+    }
+    .shpenzimetMiddleSection {
+      width: 100%;
+      @include mix.flex-container(column);
+      form {
+        @include mix.phoneCardsKreu(100%, var.$smax600_19-28);
+        h2:first-child {
+          @include mix.font(
+            var.$fontMerr,
+            var.$smax600_19-28,
+            500,
+            var.$col4,
+            0.5em,
+            0
+          );
+        }
+        div {
+          width: 90%;
+          align-self: center;
+          @include mix.flex-container(column);
+          label {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_16-23,
+              500,
+              var.$col4,
+              0.5em 0,
+              0
+            );
+          }
+          input,
+          select,
+          textarea {
+            @include mix.font(
+              var.$fontLato,
+              var.$smax600_13-19,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+            background-color: var.$col1;
+            border-radius: 0.7em;
+            &::placeholder {
+              color: var.$col4;
+            }
+          }
+          h5 {
+            @include mix.font(
+              var.$fontActor,
+              var.$smax600_13-19,
+              normal,
+              var.$colErr3,
+              0.5em 0,
+              0
+            );
+            display: none;
+          }
+        }
+        button {
+          @include mix.font(
+            var.$fontLato,
+            var.$smax600_16-23,
+            normal,
+            var.$col1,
+            0.5em,
+            0.8em
+          );
+          background-color: var.$col3;
+          border-radius: 0.6em;
+        }
+      }
+      > div {
+        @include mix.phoneCardsKreu(100%, var.$smax600_19-28);
+        section {
+          width: 90%;
+          align-self: center;
+          @include mix.flex-container(column);
+          h2:first-child {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+            padding-left: 0;
+          }
+          > div {
+            width: 100%;
+            @include mix.flex-container(column);
+            div:first-child {
+              width: 100%;
+              @include mix.flex-container($align-items: center);
+              input {
+                width: 50%;
+                @include mix.font(
+                  var.$fontLato,
+                  var.$smax600_13-19,
+                  500,
+                  var.$col1,
+                  0.5em,
+                  0
+                );
+                background-color: var.$col3;
+                border-radius: 0.7em;
+                &::placeholder {
+                  color: var.$col1;
+                }
+              }
+              button {
+                @include mix.font(
+                  var.$fontLato,
+                  var.$smax600_13-19,
+                  normal,
+                  var.$col1,
+                  0.5em 0.7em,
+                  0 0.5em
+                );
+                background-color: var.$col3;
+                border-radius: 0.6em;
+              }
+            }
+            div:nth-child(2) {
+              width: 100%;
+              @include mix.flex-container($align-items: center);
+              h3 {
+                @include mix.font(
+                  var.$fontMerr,
+                  var.$smax600_16-23,
+                  500,
+                  var.$col4,
+                  0.5em,
+                  0
+                );
+                padding-left: 0;
+              }
+              button {
+                @include mix.font(
+                  var.$fontLato,
+                  var.$smax600_13-19,
+                  normal,
+                  var.$col1,
+                  0.5em 0.7em,
+                  0 0.5em
+                );
+                background-color: var.$col3;
+                border-radius: 0.6em;
+              }
+            }
+          }
+          ul {
+            width: 100%;
+            overflow-x: scroll;
+            @include mix.hideScrollbars;
+            @include mix.flex-container(row, space-between, center);
+            li {
+              @include mix.font(
+                var.$fontLato,
+                var.$smax600_16-23,
+                medium,
+                var.$col4,
+                0.5em 0,
+                0 1em 0 0
+              );
+              cursor: pointer;
+              border-bottom: 1px solid var.$col1;
+            }
+          }
+        }
+        > ul {
+          width: 90%;
+          max-height: 400px;
+          align-self: center;
+          @include mix.flex-container(column);
+          overflow-y: scroll;
+          @include mix.hideScrollbars;
+          font-size: var.$smax600_19-28;
+          margin: 0.5em 0;
+          > li {
+            width: 100%;
+            @include mix.flex-container(column);
+            font-size: var.$smax600_16-28;
+            border-radius: 0.5em;
+            background-color: var.$col3;
+            margin: 0.5em 0 0 0;
+            cursor: pointer;
+            &:hover {
+              filter: brightness(110%);
+            }
+            > div {
+              h4 {
+                @include mix.font(
+                  var.$fontActor,
+                  var.$smax600_13-19,
+                  normal,
+                  var.$col1,
+                  0.7em,
+                  0
+                );
+              }
+              h3 {
+                @include mix.font(
+                  var.$fontLato,
+                  var.$smax600_13-19,
+                  medium,
+                  var.$col1,
+                  0.5em 0.7em 0.7em 0.7em,
+                  0 0 0 12em
+                );
+              }
+            }
+            // # Collapsed ul InshaaAllah
+            ul {
+              @include mix.flex-container(column);
+              li {
+                @include mix.font(
+                  var.$fontLato,
+                  var.$smax600_13-19,
+                  bold,
+                  var.$col1,
+                  0.5em 0.5em 0 0.7em,
+                  0
+                );
+                span {
+                  padding: 0;
+                  font-family: var.$fontActor;
+                  font-weight: normal;
+                }
+                strong {
+                  padding: 0;
+                  font-family: var.$fontMerr;
+                }
+                .tagsSpan {
+                  background-color: var.$colGogl2;
+                  color: var.$col4;
+                  padding: 0.4em 0.6em;
+                  margin-left: 0.5em;
+                  border-radius: 0.7em;
+                }
+              }
+              li:last-child {
+                padding-top: 1em;
+                padding-bottom: 1.5em;
+              }
+              display: none;
+            }
+          }
+          > li:last-child {
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+    h1:last-child {
+      @include mix.font(
+        var.$fontLato,
+        var.$smax600_23-33,
+        700,
+        var.$col4,
+        1em 0 4em 0,
+        0 auto
+      );
+      text-align: center;
+    }
+  }
+}

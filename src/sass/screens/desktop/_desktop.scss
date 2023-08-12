@@ -1,8 +1,10 @@
 @use "./login" as login;
 @use "./kreu" as kreu;
+@use "./gjurmoShpenz" as gjurmoshpenzimet;
 @use "../../sassDry/_mixins" as mix;
 
 @mixin desktopSMStyles() {
   @include login.styles;
   @include kreu.styles;
+  @include gjurmoshpenzimet.styles;
 }
