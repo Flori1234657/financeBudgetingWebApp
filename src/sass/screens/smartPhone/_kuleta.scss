@@ -1,0 +1,313 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .Kuleta-main {
+    width: 90%;
+    align-self: center;
+    @include mix.flex-container(column);
+    > h1 {
+      @include mix.font(
+        var.$fontMerr,
+        var.$smax600_23-33,
+        600,
+        var.$col4,
+        1em 0,
+        0
+      );
+    }
+    > section {
+      width: 100%;
+      @include mix.flex-container(column);
+      div:first-child {
+        width: 100%;
+        @include mix.flex-container(column);
+        > div:first-child {
+          width: 100%;
+          @include mix.phoneCardsKreu(100%, var.$smax600_19-28);
+          margin-top: 0;
+          h2:first-child {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+          }
+          h2:nth-child(2) {
+            @include mix.font(
+              var.$fontLato,
+              var.$smax600_19-28,
+              700,
+              var.$col1,
+              0 0.5em,
+              0
+            );
+          }
+          button {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_16-23,
+              400,
+              var.$col1,
+              0.5em,
+              0.8em 0.5em
+            );
+            background-color: var.$col3;
+            border-radius: 0.5em;
+            &:hover {
+              filter: brightness(110%);
+            }
+          }
+        }
+        > div:nth-child(2) {
+          width: 100%;
+          @include mix.phoneCardsKreu(100%, var.$smax600_19-28);
+          h2 {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+          }
+          ul {
+            width: 90%;
+            @include mix.flex-container(column);
+            align-self: center;
+            li {
+              width: 100%;
+              @include mix.flex-container(row, space-between, center);
+              font-size: var.$smax600_19-28;
+              padding-top: 0.5em;
+              h3 {
+                @include mix.font(
+                  var.$fontActor,
+                  var.$smax600_16-23,
+                  normal,
+                  var.$col4,
+                  0,
+                  0
+                );
+              }
+              div {
+                width: 65%;
+                @include mix.flex-container(row, space-between, center);
+                meter {
+                  width: 70%;
+                  font-size: var.$smax600_16-23;
+                  height: 1em;
+                  /* WebKit Browsers (Chrome, Safari) */
+                  &::-webkit-meter-bar {
+                    background-color: var.$col3;
+                  }
+                  &::-webkit-meter-optimum-value,
+                  &::-webkit-meter-suboptimum-value,
+                  &::-webkit-meter-even-less-good-value {
+                    background-color: var.$col1;
+                  }
+                  /* 
+                 ## Firefox 
+                 meter[value="0"]::-moz-meter-bar {
+                    background-color: #ddd; / Set the background color of the meter bar 
+                  }
+
+                 ## Edge (Chromium-based) 
+                  meter::-ms-fill-lower {
+                    background-color: #4caf50;  /Set the color of the value fill 
+                  }
+              
+                   meter::-ms-fill-upper {
+                     background-color: #ddd; 
+                   }
+                */
+                }
+              }
+            }
+          }
+          a {
+            @include mix.font(
+              var.$fontLato,
+              var.$smax600_16-23,
+              500,
+              var.$col1,
+              1em 0.8em,
+              0
+            );
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+        > div:nth-child(3) {
+          width: 100%;
+          @include mix.phoneCardsKreu(100%, var.$smax600_19-28);
+          > h2 {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+          }
+          ul {
+            width: 90%;
+            @include mix.flex-container(column);
+            align-self: center;
+            li {
+              width: 100%;
+              @include mix.flex-container(row, space-between, center);
+              font-size: var.$smax600_19-28;
+              padding-top: 0.5em;
+              h3 {
+                @include mix.font(
+                  var.$fontActor,
+                  var.$smax600_16-23,
+                  normal,
+                  var.$col1,
+                  0,
+                  0
+                );
+              }
+              div {
+                width: 65%;
+                @include mix.flex-container(row, space-between, center);
+                meter {
+                  width: 70%;
+                  font-size: var.$smax600_16-23;
+                  height: 1em;
+                  /* WebKit Browsers (Chrome, Safari) */
+                  &::-webkit-meter-bar {
+                    background-color: var.$col1;
+                  }
+                  &::-webkit-meter-optimum-value,
+                  &::-webkit-meter-suboptimum-value,
+                  &::-webkit-meter-even-less-good-value {
+                    background-color: var.$colGogl2;
+                  }
+                }
+              }
+            }
+            li:last-child {
+              padding-bottom: 1em;
+            }
+          }
+        }
+      }
+      div:nth-child(2) {
+        width: 100%;
+        @include mix.flex-container(column);
+        > div:first-child {
+          width: 100%;
+          @include mix.phoneCardsKreu(100%, var.$smax600_19-28);
+          > h2 {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+            span {
+              color: var.$col1;
+              font-family: var.$fontLato;
+              font-size: var.$smax600_13-19;
+              padding-left: clamp(5rem, calc(-5rem + 50vw), 13.75rem); //80-220
+            }
+          }
+          ul {
+            width: 90%;
+            align-self: center;
+            @include mix.flex-container(column);
+            li {
+              @include mix.font(
+                var.$fontLato,
+                var.$smax600_16-23,
+                500,
+                var.$col1,
+                0.5em,
+                0
+              );
+              span {
+                color: var.$col3;
+                padding-left: clamp(
+                  5rem,
+                  calc(-5rem + 50vw),
+                  13.75rem
+                ); //80-220
+                font-family: var.$fontActor;
+              }
+              strong {
+                color: var.$col4;
+                font-size: var.$smax600_13-19;
+                font-family: var.$fontMerr;
+                color: var.$col3;
+              }
+            }
+          }
+          div {
+            all: initial;
+            width: 90%;
+            align-self: center;
+            @include mix.flex-container(row, space-between, center);
+            button {
+              @include mix.font(
+                var.$fontMerr,
+                var.$smax600_13-19,
+                500,
+                var.$col1,
+                0.5em 0.8em,
+                1em 0.5em
+              );
+              background-color: var.$col3;
+              border-radius: 0.6em;
+            }
+            button:nth-child(2) {
+              background-color: var.$colErr3;
+            }
+          }
+        }
+        > div:last-child {
+          width: 100%;
+          @include mix.phoneCardsKreu(100%, var.$smax600_19-28);
+          > h2 {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+          }
+          div {
+            width: 90%;
+            align-self: center;
+            @include mix.flex-container();
+          }
+          .graphicLineChart {
+            font-size: var.$smax600_19-28;
+            margin: 1em;
+          }
+        }
+      }
+    }
+    h1:last-child {
+      @include mix.font(
+        var.$fontLato,
+        var.$smax600_23-33,
+        700,
+        var.$col4,
+        1em 0 4em 0,
+        0 auto
+      );
+      text-align: center;
+    }
+  }
+}

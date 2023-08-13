@@ -28,6 +28,9 @@
           }
           div {
             @include mix.flex-container(column, flex-start, flex-start);
+            justify-content: flex-start;
+            align-self: flex-end;
+            width: 93%;
             h3 {
               font-size: var.$smax1199_11-13;
               padding: 2em 0 0 0;
@@ -35,6 +38,7 @@
             h4 {
               font-size: var.$smax1199_13-16;
               padding: 0.5em 0 3.6em 0;
+              margin-left: 0;
             }
           }
         }

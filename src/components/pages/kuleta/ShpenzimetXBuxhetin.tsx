@@ -11,6 +11,22 @@ const provObj: Props[] = [
     low: 32,
     high: 90,
   },
+  {
+    id: 2,
+    qellimi: "Kategoria",
+    value: 36,
+    max: 12.3,
+    low: 32,
+    high: 90,
+  },
+  {
+    id: 3,
+    qellimi: "Kategoria",
+    value: 36,
+    max: 12.3,
+    low: 32,
+    high: 90,
+  },
 ];
 
 const ShpenzimetXBuxhetin = () => {

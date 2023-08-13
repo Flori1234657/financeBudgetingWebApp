@@ -6,63 +6,78 @@
   header {
     font-size: var.$smax899_23-33;
     div {
+      width: 85%;
       figure {
         figcaption {
-          font-size: var.$smax899_28-40;
+          font-size: var.$smax899_23-33;
         }
+        img {
+          width: 18%;
+        }
+      }
+      img {
+        width: 7%;
       }
     }
   }
   @include tabNav.styles;
   .kreuMain {
+    width: 85%;
     h1 {
       font-size: var.$smax899_33-48;
     }
     .kreuGraphCont {
       .kreuGrphUp {
+        width: 100%;
         .krGrphUp-card1 {
+          width: 100%;
           h2:first-child {
-            font-size: var.$smax899_28-40;
+            font-size: var.$smax899_23-33;
           }
           h2:nth-child(2) {
-            font-size: var.$smax899_33-48;
+            font-size: var.$smax899_28-40;
             span {
-              font-size: var.$smax899_23-33;
+              font-size: var.$smax899_19-28;
             }
           }
           div {
+            justify-content: flex-start;
+            align-self: flex-end;
+            width: 60%;
             h3 {
-              font-size: var.$smax899_19-28;
+              font-size: var.$smax899_16-23;
             }
             h4 {
-              font-size: var.$smax899_16-23;
+              font-size: var.$smax899_13-19;
+              margin-left: 1em;
             }
           }
         }
         .krGrphUp-card2 {
+          width: 100%;
           h2 {
-            font-size: var.$smax899_28-40;
+            font-size: var.$smax899_23-33;
           }
           > div {
-            font-size: var.$smax899_28-40;
+            font-size: var.$smax899_23-33;
           }
         }
         .krGrphUp-card3 {
           h2 {
-            font-size: var.$smax899_28-40;
+            font-size: var.$smax899_23-33;
           }
           > div {
             .kreu_kufijteBuxhetor--card {
               .progressBarGroup {
                 h3 {
-                  font-size: var.$smax899_23-33;
+                  font-size: var.$smax899_19-28;
                 }
                 div {
                   h4 {
-                    font-size: var.$smax899_16-23;
+                    font-size: var.$smax899_13-19;
                   }
                   meter {
-                    font-size: var.$smax899_16-23;
+                    font-size: var.$smax899_13-19;
                     height: 1.5em;
                   }
                 }
@@ -71,13 +86,13 @@
           }
           .sortOptionsGroup {
             h3 {
-              font-size: var.$smax899_23-33;
+              font-size: var.$smax899_19-28;
             }
             select {
-              font-size: var.$smax899_23-33;
+              font-size: var.$smax899_19-28;
             }
             button {
-              font-size: var.$smax899_23-33;
+              font-size: var.$smax899_19-28;
             }
           }
         }
@@ -87,18 +102,18 @@
       > div:last-child {
         max-width: 770px;
         h2 {
-          font-size: var.$smax899_28-40;
+          font-size: var.$smax899_23-33;
         }
         div {
           max-width: none;
-          font-size: var.$smax899_23-33;
+          font-size: var.$smax899_19-28;
 
           h3 {
-            font-size: var.$smax899_23-33;
+            font-size: var.$smax899_19-28;
           }
           div {
             h4 {
-              font-size: var.$smax899_16-23;
+              font-size: var.$smax899_13-19;
               span {
                 padding-left: 5em;
               }
@@ -107,7 +122,7 @@
         }
       }
       .grafikuMadh {
-        font-size: var.$smax899_28-40;
+        font-size: var.$smax899_23-33;
       }
     }
     .bottomTitle {

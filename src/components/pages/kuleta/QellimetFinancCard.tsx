@@ -12,6 +12,22 @@ const QellimetFinancCard = () => {
       low: 32,
       high: 90,
     },
+    {
+      id: 3,
+      qellimi: "Qëllimi 2",
+      value: 36,
+      max: 54,
+      low: 32,
+      high: 90,
+    },
+    {
+      id: 4,
+      qellimi: "Qëllimi 3",
+      value: 36,
+      max: 100,
+      low: 32,
+      high: 90,
+    },
   ];
 
   return (

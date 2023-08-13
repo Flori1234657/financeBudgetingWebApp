@@ -1,20 +1,17 @@
 import React from "react";
+import PieCh from "./charts/PieCh";
+import GraphChart from "./charts/GraphChart";
 
 const KufijtBuxhMeTeSh = () => {
   return (
     <div aria-label="Budgeting limits card">
       <h2>Kufijtë buxhetor më të shumtë</h2>
       <div aria-label="Pie chart">
-        <ul>
-          <li>Kategoria</li>
-          <li>Kategoria</li>
-          <li>Kategoria</li>
-          <li>Kategoria</li>
-          <li>Kategoria</li>
-        </ul>
-        {/*Pie Chart*/}
+        <PieCh />
       </div>
-      <div aria-label="graph"></div>
+      <div aria-label="graph" className="graphicLineChart">
+        <GraphChart />
+      </div>
     </div>
   );
 };
