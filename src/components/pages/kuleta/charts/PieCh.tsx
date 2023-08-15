@@ -7,7 +7,10 @@ ChartJS.register(ArcElement, Tooltip, Legend);
 
 const PieCh = () => {
   const [data, setData] = useState<ChartData>({
-    labels: ["Ushqimore", "Higjenike", "Shtepiake", "Veshje"],
+    labels:
+      window.innerWidth < 900
+        ? ["Ushqimore", "Higjenike", "Shtepiake", "Veshje"]
+        : [],
     datasets: [
       {
         label: "Lekë",

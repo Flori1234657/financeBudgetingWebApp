@@ -1,0 +1,141 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .Kuleta-main {
+    width: 80%;
+    > h1 {
+      font-size: var.$smax1199_19-23;
+      padding-top: 3em;
+    }
+    > section {
+      div:first-child {
+        @include mix.flex-container(row, space-between, center);
+        > div:first-child {
+          @include mix.phoneCardsKreu(30%, var.$smax1199_19-23);
+          h2:first-child {
+            font-size: var.$smax1199_16-19;
+          }
+          h2:nth-child(2) {
+            font-size: var.$smax1199_16-19;
+            padding-top: 0.2em;
+          }
+          button {
+            font-size: var.$smax1199_13-16;
+            margin-top: 3.8em;
+            margin-bottom: 1em;
+          }
+          margin-top: 0;
+        }
+        > div:nth-child(2) {
+          @include mix.phoneCardsKreu(33%, var.$smax1199_19-23);
+          h2 {
+            font-size: var.$smax1199_16-19;
+          }
+          ul {
+            li {
+              font-size: var.$smax1199_19-23;
+              h3 {
+                font-size: var.$smax1199_13-16;
+              }
+              div {
+                meter {
+                  font-size: var.$smax1199_13-16;
+                }
+              }
+            }
+          }
+          a {
+            font-size: var.$smax1199_13-16;
+            padding-bottom: 0.8em;
+          }
+          margin-top: 0;
+        }
+        > div:nth-child(3) {
+          @include mix.phoneCardsKreu(35%, var.$smax1199_19-23);
+          > h2 {
+            font-size: var.$smax1199_16-19;
+          }
+          ul {
+            li {
+              font-size: var.$smax1199_16-19;
+              h3 {
+                font-size: var.$smax1199_13-16;
+              }
+              div {
+                meter {
+                  font-size: var.$smax1199_13-16;
+                }
+              }
+            }
+            li:last-child {
+              padding-bottom: 1.6em;
+            }
+          }
+          margin-top: 0;
+        }
+      }
+      div:nth-child(2) {
+        width: 100%;
+        @include mix.flex-container(row, space-between, center);
+        > div:first-child {
+          @include mix.phoneCardsKreu(38%, var.$smax1199_19-23);
+          > h2 {
+            font-size: var.$smax1199_16-19;
+            span {
+              font-size: var.$smax1199_11-13;
+              padding-left: clamp(
+                6.25rem,
+                calc(-3.16rem + 16.72vw),
+                9.38rem
+              ); // 100-150
+            }
+          }
+          ul {
+            li {
+              font-size: var.$smax1199_13-16;
+              span {
+                padding-left: clamp(
+                  6.25rem,
+                  calc(-3.16rem + 16.72vw),
+                  9.38rem
+                ); // 100-150
+              }
+              strong {
+                font-size: var.$smax1199_11-13;
+              }
+            }
+          }
+          div {
+            button {
+              font-size: var.$smax1199_11-13;
+            }
+          }
+        }
+        > div:last-child {
+          @include mix.phoneCardsKreu(61%, var.$smax1199_19-23);
+          > h2 {
+            font-size: var.$smax1199_16-19;
+          }
+          .kreu_tabWLastCard_charts_group {
+            width: 90%;
+            @include mix.flex-container(row, space-between, center);
+
+            div {
+              width: 30%;
+            }
+            .graphicLineChart {
+              margin-bottom: 2.9em;
+              width: 68%;
+              font-size: var.$smax1199_11-13;
+            }
+          }
+        }
+      }
+    }
+    h1:last-child {
+      font-size: var.$smax1199_28-33;
+      padding-bottom: 1.5em;
+    }
+  }
+}

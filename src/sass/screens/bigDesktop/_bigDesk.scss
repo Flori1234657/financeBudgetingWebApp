@@ -1,10 +1,12 @@
 @use "./login" as login;
 @use "./kreu" as kreu;
 @use "./gjurmoShpenz" as gjurmoShpenzimet;
+@use "./kuleta" as kuleta;
 @use "../../sassDry/_mixins" as mix;
 
 @mixin desktopBIGStyles() {
   @include login.styles;
   @include kreu.styles;
   @include gjurmoShpenzimet.styles;
+  @include kuleta.styles;
 }

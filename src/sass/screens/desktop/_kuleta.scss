@@ -1,0 +1,125 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .Kuleta-main {
+    > h1 {
+      font-size: var.$smax1799_19-28;
+      padding-top: 3.5em;
+    }
+    > section {
+      div:first-child {
+        > div:first-child {
+          @include mix.phoneCardsKreu(30%, var.$smax1799_19-28);
+          h2:first-child {
+            font-size: var.$smax1799_16-23;
+          }
+          h2:nth-child(2) {
+            font-size: var.$smax1799_16-23;
+          }
+          button {
+            font-size: var.$smax1799_13-19;
+          }
+          margin-top: 0;
+        }
+        > div:nth-child(2) {
+          @include mix.phoneCardsKreu(33%, var.$smax1799_19-28);
+          h2 {
+            font-size: var.$smax1799_16-23;
+          }
+          ul {
+            li {
+              font-size: var.$smax1799_19-28;
+              h3 {
+                font-size: var.$smax1799_13-19;
+              }
+              div {
+                meter {
+                  font-size: var.$smax1799_13-19;
+                }
+              }
+            }
+          }
+          a {
+            font-size: var.$smax1799_13-19;
+          }
+          margin-top: 0;
+        }
+        > div:nth-child(3) {
+          @include mix.phoneCardsKreu(35%, var.$smax1799_19-28);
+          > h2 {
+            font-size: var.$smax1799_16-23;
+          }
+          ul {
+            li {
+              font-size: var.$smax1799_16-23;
+              h3 {
+                font-size: var.$smax1799_13-19;
+              }
+              div {
+                meter {
+                  font-size: var.$smax1799_13-19;
+                }
+              }
+            }
+            li:last-child {
+              padding-bottom: 2.7em;
+            }
+          }
+          margin-top: 0;
+        }
+      }
+      div:nth-child(2) {
+        > div:first-child {
+          @include mix.phoneCardsKreu(38%, var.$smax1799_19-28);
+          > h2 {
+            font-size: var.$smax1799_16-23;
+            span {
+              font-size: var.$smax1799_13-19;
+              padding-left: clamp(
+                9.38rem,
+                calc(-5.65rem + 20.03vw),
+                16.88rem
+              ); // 150-270
+            }
+          }
+          ul {
+            li {
+              font-size: var.$smax1799_16-23;
+              span {
+                padding-left: clamp(
+                  9.38rem,
+                  calc(-0.64rem + 13.36vw),
+                  14.38rem
+                ); // 150-230
+              }
+              strong {
+                font-size: var.$smax1799_13-19;
+              }
+            }
+          }
+          div {
+            button {
+              font-size: var.$smax1799_13-19;
+            }
+          }
+        }
+        > div:last-child {
+          @include mix.phoneCardsKreu(61%, var.$smax1799_19-28);
+          > h2 {
+            font-size: var.$smax1799_16-23;
+          }
+          .kreu_tabWLastCard_charts_group {
+            .graphicLineChart {
+              font-size: var.$smax1799_13-19;
+              margin-bottom: 2.5em;
+            }
+          }
+        }
+      }
+    }
+    h1:last-child {
+      font-size: var.$smax1799_33-48;
+    }
+  }
+}

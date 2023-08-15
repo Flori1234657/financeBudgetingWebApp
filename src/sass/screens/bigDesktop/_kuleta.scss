@@ -1,0 +1,124 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .Kuleta-main {
+    > h1 {
+      font-size: var.$smax3000_28-48;
+    }
+    > section {
+      div:first-child {
+        > div:first-child {
+          @include mix.phoneCardsKreu(30%, var.$smax3000_19-33);
+          h2:first-child {
+            font-size: var.$smax3000_23-40;
+          }
+          h2:nth-child(2) {
+            font-size: var.$smax3000_23-40;
+          }
+          button {
+            font-size: var.$smax3000_19-33;
+          }
+          margin-top: 0;
+        }
+        > div:nth-child(2) {
+          @include mix.phoneCardsKreu(33%, var.$smax3000_28-48);
+          h2 {
+            font-size: var.$smax3000_23-40;
+          }
+          ul {
+            li {
+              font-size: var.$smax3000_28-48;
+              h3 {
+                font-size: var.$smax3000_19-33;
+              }
+              div {
+                meter {
+                  font-size: var.$smax3000_19-33;
+                }
+              }
+            }
+          }
+          a {
+            font-size: var.$smax3000_19-33;
+          }
+          margin-top: 0;
+        }
+        > div:nth-child(3) {
+          @include mix.phoneCardsKreu(35%, var.$smax3000_19-33);
+          > h2 {
+            font-size: var.$smax3000_23-40;
+          }
+          ul {
+            li {
+              font-size: var.$smax3000_23-40;
+              h3 {
+                font-size: var.$smax3000_19-33;
+              }
+              div {
+                meter {
+                  font-size: var.$smax3000_19-33;
+                }
+              }
+            }
+            li:last-child {
+              padding-bottom: 2.7em;
+            }
+          }
+          margin-top: 0;
+        }
+      }
+      div:nth-child(2) {
+        > div:first-child {
+          @include mix.phoneCardsKreu(38%, var.$smax3000_19-33);
+          > h2 {
+            font-size: var.$smax3000_23-40;
+            span {
+              font-size: var.$smax3000_19-33;
+              padding-left: clamp(
+                13.75rem,
+                calc(-5rem + 16.67vw),
+                26.25rem
+              ); // 220-420
+            }
+          }
+          ul {
+            li {
+              font-size: var.$smax3000_23-40;
+              span {
+                padding-left: clamp(
+                  13.75rem,
+                  calc(-5rem + 16.67vw),
+                  26.25rem
+                ); // 220-420
+              }
+              strong {
+                font-size: var.$smax3000_19-33;
+              }
+            }
+          }
+          div {
+            button {
+              font-size: var.$smax3000_19-33;
+            }
+          }
+        }
+        > div:last-child {
+          @include mix.phoneCardsKreu(61%, var.$smax3000_19-33);
+          > h2 {
+            font-size: var.$smax3000_23-40;
+          }
+          .kreu_tabWLastCard_charts_group {
+            .graphicLineChart {
+              font-size: var.$smax3000_19-33;
+              margin-bottom: 2.5em;
+            }
+          }
+        }
+      }
+    }
+    h1:last-child {
+      font-size: var.$smax3000_48-83;
+    }
+  }
+}
