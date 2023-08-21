@@ -1,0 +1,132 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .analytics-main {
+    width: 90%;
+    align-self: center;
+    @include mix.flex-container(column);
+    > h1 {
+      @include mix.font(
+        var.$fontMerr,
+        var.$smax600_23-33,
+        600,
+        var.$col4,
+        1em 0,
+        0
+      );
+    }
+    > section {
+      width: 100%;
+      @include mix.flex-container(column);
+      .analytics-main_firstGraphsGroup {
+        width: 100%;
+        @include mix.flex-container(column);
+        .analyticsPieChartCard {
+          @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax600_19-28);
+          h2:first-child {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+          }
+          > div {
+            align-self: center;
+            width: 85%;
+            font-size: var.$smax600_19-28;
+            padding: 1em 0;
+          }
+        }
+        .qellimet-FinancTeArrCard {
+          @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax600_19-28);
+          h2:first-child {
+            @include mix.font(
+              var.$fontMerr,
+              var.$smax600_19-28,
+              500,
+              var.$col4,
+              0.5em,
+              0
+            );
+          }
+          ul {
+            width: 92.5%;
+            align-self: center;
+            li {
+              @include mix.font(
+                var.$fontActor,
+                var.$smax600_16-28,
+                normal,
+                var.$col1,
+                0.5em 0,
+                0
+              );
+              span {
+                margin-left: 5em;
+                color: var.$col3;
+              }
+              strong {
+                color: var.$col3;
+              }
+            }
+            li:last-child {
+              margin-bottom: 1em;
+            }
+          }
+        }
+      }
+      .buxhetiDhenMeShmCard {
+        @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax600_19-28);
+        h2:first-child {
+          @include mix.font(
+            var.$fontMerr,
+            var.$smax600_19-28,
+            500,
+            var.$col4,
+            0.5em,
+            0
+          );
+        }
+        > div {
+          align-self: center;
+          width: 85%;
+          font-size: var.$smax600_19-28;
+          padding: 1em 0;
+        }
+      }
+      .kuletaGraphicCard {
+        @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax600_19-28);
+        h2:first-child {
+          @include mix.font(
+            var.$fontMerr,
+            var.$smax600_19-28,
+            500,
+            var.$col4,
+            0.5em,
+            0
+          );
+        }
+        .daily-graph-chart {
+          width: 90%;
+          font-size: var.$smax600_19-28;
+          margin: 0.5em auto;
+        }
+      }
+    }
+    h1:last-child {
+      @include mix.font(
+        var.$fontLato,
+        var.$smax600_23-33,
+        700,
+        var.$col4,
+        1em 0 4em 0,
+        0 auto
+      );
+      text-align: center;
+    }
+  }
+}

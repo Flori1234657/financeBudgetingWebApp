@@ -1,0 +1,59 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .analytics-main {
+    > h1 {
+      font-size: var.$smax1799_19-28;
+    }
+    > section {
+      .analytics-main_firstGraphsGroup {
+        .analyticsPieChartCard {
+          @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax1799_19-28);
+          h2:first-child {
+            font-size: var.$smax1799_19-28;
+          }
+          > div {
+            font-size: var.$smax1799_23-33;
+          }
+        }
+        .qellimet-FinancTeArrCard {
+          @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax1799_19-28);
+          h2:first-child {
+            font-size: var.$smax1799_19-28;
+          }
+          ul {
+            li {
+              font-size: var.$smax1799_16-23;
+              span {
+                margin-left: 7em;
+                color: var.$col3;
+              }
+            }
+          }
+        }
+      }
+      .buxhetiDhenMeShmCard {
+        @include mix.phoneCardsKreu($wdth: 33%, $fs: var.$smax1799_23-33);
+        h2:first-child {
+          font-size: var.$smax1799_19-28;
+        }
+        > div {
+          font-size: var.$smax1799_23-33;
+        }
+      }
+      .kuletaGraphicCard {
+        @include mix.phoneCardsKreu($wdth: 32%, $fs: var.$smax1799_23-33);
+        h2:first-child {
+          font-size: var.$smax1799_19-28;
+        }
+        .daily-graph-chart {
+          font-size: var.$smax1799_23-33;
+        }
+      }
+    }
+    h1:last-child {
+      font-size: var.$smax1799_33-48;
+    }
+  }
+}

@@ -1,0 +1,91 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .analytics-main {
+    width: 80%;
+    align-self: center;
+    @include mix.flex-container(column);
+    > h1 {
+      font-size: var.$smax1199_19-23;
+      padding-top: 3em;
+    }
+    > section {
+      width: 100%;
+      @include mix.flex-container(row, space-between, center);
+      .analytics-main_firstGraphsGroup {
+        width: 32%;
+        @include mix.flex-container(column);
+        .analyticsPieChartCard {
+          @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax1199_19-23);
+          margin-top: 0;
+          h2:first-child {
+            font-size: var.$smax1199_16-19;
+          }
+          > div {
+            width: 60%;
+            font-size: var.$smax1199_19-23;
+          }
+        }
+        .qellimet-FinancTeArrCard {
+          @include mix.phoneCardsKreu($wdth: 100%, $fs: var.$smax1199_19-23);
+          h2:first-child {
+            font-size: var.$smax1199_16-19;
+          }
+          ul {
+            width: 92.5%;
+            align-self: center;
+            li {
+              font-size: var.$smax1199_13-16;
+              span {
+                margin-left: 5em;
+                color: var.$col3;
+              }
+              strong {
+                color: var.$col3;
+              }
+            }
+            li:last-child {
+              margin-bottom: 1em;
+            }
+          }
+        }
+      }
+      .buxhetiDhenMeShmCard {
+        @include mix.phoneCardsKreu($wdth: 33%, $fs: var.$smax1199_19-23);
+        justify-content: space-between;
+        height: 23.7em;
+        margin-top: 0;
+        h2:first-child {
+          font-size: var.$smax1199_16-19;
+        }
+        > div {
+          align-self: center;
+          width: 85%;
+          height: 90%;
+          font-size: var.$smax1199_19-23;
+          padding: 1em 0;
+        }
+      }
+      .kuletaGraphicCard {
+        @include mix.phoneCardsKreu($wdth: 32%, $fs: var.$smax1199_19-23);
+        justify-content: space-between;
+        height: 23.7em;
+        margin-top: 0;
+        h2:first-child {
+          font-size: var.$smax1199_16-19;
+        }
+        .daily-graph-chart {
+          width: 90%;
+          height: 90%;
+          font-size: var.$smax1199_19-23;
+          margin: 0.5em auto;
+        }
+      }
+    }
+    h1:last-child {
+      font-size: var.$smax1199_28-33;
+      padding-bottom: 1.5em;
+    }
+  }
+}

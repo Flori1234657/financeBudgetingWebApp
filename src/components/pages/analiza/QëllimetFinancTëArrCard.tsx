@@ -2,7 +2,10 @@ import React from "react";
 
 const QëllimetFinancTëArrCard = () => {
   return (
-    <div aria-label="Done financing goals card">
+    <div
+      aria-label="Done financing goals card"
+      className="qellimet-FinancTeArrCard"
+    >
       <h2>Qëllimet financiare të arritura</h2>
       <ul>
         <li>

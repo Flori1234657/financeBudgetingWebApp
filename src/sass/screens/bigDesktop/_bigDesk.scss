@@ -2,6 +2,7 @@
 @use "./kreu" as kreu;
 @use "./gjurmoShpenz" as gjurmoShpenzimet;
 @use "./kuleta" as kuleta;
+@use "./analiza" as analiza;
 @use "../../sassDry/_mixins" as mix;
 
 @mixin desktopBIGStyles() {
@@ -9,4 +10,5 @@
   @include kreu.styles;
   @include gjurmoShpenzimet.styles;
   @include kuleta.styles;
+  @include analiza.styles;
 }

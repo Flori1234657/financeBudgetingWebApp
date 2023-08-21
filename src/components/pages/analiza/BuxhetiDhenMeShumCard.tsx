@@ -1,10 +1,13 @@
 import React from "react";
+import LineChart from "./charts/LineChart";
 
 const BuxhetiDhenMeShumCard = () => {
   return (
-    <div aria-label="Budget graphic">
+    <div aria-label="Budget graphic" className="buxhetiDhenMeShmCard">
       <h2>Buxheti i dhën më shumë</h2>
-      {/* Graph */}
+      <div aria-label="Graphic card container" id="analiz-bar_chart-container">
+        <LineChart />
+      </div>
     </div>
   );
 };
