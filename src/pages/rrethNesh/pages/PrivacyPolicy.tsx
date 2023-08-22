@@ -1,15 +1,7 @@
-import React from "react";
-import { MdOutlinePrivacyTip } from "react-icons/md";
-
 const PrivacyPolicy = () => {
   return (
     <>
-      <h1>
-        Privacy Policy{" "}
-        <span>
-          <MdOutlinePrivacyTip />
-        </span>
-      </h1>
+      <h1>Privacy Policy</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut dolores ab
         nobis in odit unde aliquid. Voluptas nihil ad repudiandae quis

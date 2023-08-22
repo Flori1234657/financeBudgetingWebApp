@@ -1,16 +1,9 @@
-import React from "react";
 import { BsArrowDownCircle } from "react-icons/bs";
-import { AiOutlineQuestionCircle } from "react-icons/ai";
 
 const Faqs = () => {
   return (
     <>
-      <h1>
-        Pyetjet e shpeshta{" "}
-        <span>
-          <AiOutlineQuestionCircle />
-        </span>
-      </h1>
+      <h1>Pyetjet e shpeshta </h1>
       <ul className="faqs items">
         <li>
           <h2>

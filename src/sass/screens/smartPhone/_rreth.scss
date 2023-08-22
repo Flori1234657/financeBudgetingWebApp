@@ -1,0 +1,82 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .about-main {
+    width: 90%;
+    align-self: center;
+    @include mix.flex-container(column);
+    nav {
+      order: 2;
+      width: 100%;
+      font-size: var.$smax600_19-28;
+      padding: 1em 0 5em 0;
+      ul {
+        @include mix.flex-container(row, space-between, center);
+        border-top: 1px solid var.$colInfo1;
+        li {
+          @include mix.font(
+            var.$fontLato,
+            var.$smax600_13-19,
+            500,
+            var.$colInfo2,
+            0.5em 0 0 0,
+            0
+          );
+        }
+      }
+    }
+    aside {
+      > h1 {
+        @include mix.font(
+          var.$fontMerr,
+          var.$smax600_23-33,
+          600,
+          var.$col4,
+          1em 0,
+          0
+        );
+      }
+      p {
+        @include mix.font(
+          var.$fontActor,
+          var.$smax600_16-23,
+          400,
+          var.$col4,
+          0,
+          0
+        );
+      }
+      h2 {
+        @include mix.font(
+          var.$fontMerr,
+          var.$smax600_19-28,
+          500,
+          var.$col4,
+          1em 0,
+          0
+        );
+      }
+      div {
+        width: 100%;
+        @include mix.flex-container();
+        svg {
+          font-size: var.$smax600_19-28;
+          color: var.$col3;
+          width: 0.8em;
+          margin-bottom: 0.3em;
+        }
+        h3 {
+          @include mix.font(
+            var.$fontMerr,
+            var.$smax600_13-19,
+            400,
+            var.$col3,
+            0,
+            0 0 0 1em
+          );
+        }
+      }
+    }
+  }
+}

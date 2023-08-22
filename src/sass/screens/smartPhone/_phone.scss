@@ -3,6 +3,7 @@
 @use "./gjurmoShpenz" as gjurmoShpenzimet;
 @use "./kuleta" as kuleta;
 @use "./analiza" as analiza;
+@use "./rreth" as rreth;
 @use "../../sassDry/_mixins" as mix;
 
 @mixin phoneStyles() {
@@ -15,4 +16,5 @@
   @include gjurmoShpenzimet.styles;
   @include kuleta.styles;
   @include analiza.styles;
+  @include rreth.styles;
 }

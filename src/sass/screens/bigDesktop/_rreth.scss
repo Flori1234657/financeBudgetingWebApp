@@ -1,0 +1,37 @@
+@use "../../sassDry/_mixins" as mix;
+@use "../../sassDry/_variables" as var;
+
+@mixin styles {
+  .about-main {
+    font-size: var.$smax3000_28-48;
+    padding-top: 4em;
+    nav {
+      font-size: var.$smax3000_28-48;
+      ul {
+        li {
+          font-size: var.$smax3000_19-33;
+        }
+      }
+    }
+    aside {
+      font-size: var.$smax3000_28-48;
+      > h1 {
+        font-size: var.$smax3000_28-48;
+      }
+      p {
+        font-size: var.$smax3000_19-33;
+      }
+      h2 {
+        font-size: var.$smax3000_23-40;
+      }
+      div {
+        svg {
+          font-size: var.$smax3000_23-40;
+        }
+        h3 {
+          font-size: var.$smax3000_16-28;
+        }
+      }
+    }
+  }
+}

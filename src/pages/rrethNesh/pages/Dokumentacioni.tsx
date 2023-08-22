@@ -1,15 +1,7 @@
-import React from "react";
-import { HiOutlineDocumentText } from "react-icons/hi";
-
 const Dokumentacioni = () => {
   return (
     <>
-      <h1>
-        Dokumentacioni{" "}
-        <span>
-          <HiOutlineDocumentText />
-        </span>
-      </h1>
+      <h1>Dokumentacioni </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, eos
         odio, minima dolorem enim accusamus corrupti voluptatibus totam numquam

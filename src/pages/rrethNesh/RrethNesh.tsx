@@ -1,4 +1,5 @@
 import { useState, lazy, Suspense, useEffect } from "react";
+import PhoneHeader from "../../components/universal/PhoneHeader";
 
 const RrethNesh = () => {
   const [version, setVersion] = useState<string>("rreth");
@@ -33,39 +34,43 @@ const RrethNesh = () => {
   }, [version]);
 
   return (
-    <main className="About main">
-      <nav>
-        <ul>
-          <button
-            aria-label="Button For Naviagion"
-            onClick={() => setVersion("rreth")}
-          >
-            Rreth
-          </button>
-          <button
-            aria-label="Button For Naviagion"
-            onClick={() => setVersion("dokumentacioni")}
-          >
-            Dokumentacioni
-          </button>
-          <button
-            aria-label="Button For Naviagion"
-            onClick={() => setVersion("faqs")}
-          >
-            FAQ'S
-          </button>
-          <button
-            aria-label="Button For Naviagion"
-            onClick={() => setVersion("privacyPolicy")}
-          >
-            Privacy Policy
-          </button>
-        </ul>
-      </nav>
-      <aside>
-        <Suspense>{returnComp}</Suspense>
-      </aside>
-    </main>
+    <>
+      {" "}
+      {window.innerWidth < 900 ? <PhoneHeader /> : ""}
+      <main className="about-main">
+        <nav>
+          <ul>
+            <li
+              aria-label="Link For Naviagion"
+              onClick={() => setVersion("rreth")}
+            >
+              Rreth
+            </li>
+            <li
+              aria-label="Link For Naviagion"
+              onClick={() => setVersion("dokumentacioni")}
+            >
+              Dokumentacioni
+            </li>
+            <li
+              aria-label="Link For Naviagion"
+              onClick={() => setVersion("faqs")}
+            >
+              FAQ'S
+            </li>
+            <li
+              aria-label="Link For Naviagion"
+              onClick={() => setVersion("privacyPolicy")}
+            >
+              Privacy Policy
+            </li>
+          </ul>
+        </nav>
+        <aside>
+          <Suspense>{returnComp}</Suspense>
+        </aside>
+      </main>
+    </>
   );
 };
 
