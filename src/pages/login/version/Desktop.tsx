@@ -2,8 +2,11 @@ import miniDescIcon from "../../../assets/images/icons/miniDescpIcon.png";
 import Logo from "../../../assets/images/logo.png";
 import { BiLogoFacebook as FbLogo } from "react-icons/bi";
 import { PiGoogleChromeLogoBold as GoogleLogo } from "react-icons/pi";
+import { useNavigate } from "react-router-dom";
 
 const Desktop = () => {
+  const nav = useNavigate();
+
   return (
     <main className="desktLogin">
       <form>
@@ -20,7 +23,7 @@ const Desktop = () => {
           <h1>Gjeniu Buxhetor</h1>
         </figure>
         <div className="dskLogin-btnContainer" role="group">
-          <button>
+          <button onClick={() => nav("./kreu")}>
             {" "}
             <span>
               <FbLogo />
